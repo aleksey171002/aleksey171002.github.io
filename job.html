@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="static/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+    <title>Доставка пиццы</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./static/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff"></head>
+<body class="page">
+
+    <section class="message">
+        <div class="wrap inner">
+            <div class="message__inner text--medium">
+                <svg class="icon icon-alert-circle message__svg">
+                    <use xlink:href="static/sprite.svg#alert-circle"/>
+                </svg>Заказ с сайта сегодня не доступен. Ведуться технические работы
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="wrap inner">
+            <div class="header__inner">
+                <div class="header__line"><a class="header__logo" href>
+                    <img src="./images_2/logoBlack.png" alt="logo" class="header-bottom__basket">
+                    <img src="./images_2/logoLongBlack.png" class="logo_horis" alt="logo"></a>
+                    <div class="header__block city header__city">
+                        <p class="city__label text--medium">Ваш город: <span class="city__value">Барнаул</span></p>
+                        <p class="city__desc text--small">Доставка за 59 мин.</p>
+                    </div>
+                    <div class="header__block contacts header__contacts"><a class="contacts__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                        <p class="contacts__desc text--small">Сегодня 09:00 - 23:00</p>
+                    </div>
+                    <div class="header__social-icons social-icons">
+                            <a class="social-icons__item" href><i class="fab fa-vk"></i></a>
+                            <a class="social-icons__item"> <i class="fab fa-instagram"></i> </a>
+                        </div>
+                   
+                </div>
+                  <div class="header__block contacts header__contacts">
+                        <a class="contacts__number link text--medium">Urban Delivery</a>
+                    </div>
+                <div class="header__auth auth"><a class="auth__link" href>
+                            <img src="images_2/key.svg" alt="logo">
+                            <span class="auth__text">Войти</span></a></div>
+                <div class="header__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header__form-promocode.form-promocode.form-promocode--error(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                 button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+                   <form action="" class="header__form-promocode">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header__busket">
+                        <img src="images_2/shopping-bag.svg" alt="logo"><span class="basket__count text--medium">2</span>
+                    </button>
+                    <button class="burger header__burger"><span class="burger__item burger__item1"></span><span class="burger__item burger__item2"></span><span class="burger__item burger__item3"></span><span class="burger__item burger__item4"></span><span class="burger__item burger__item5"></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="header-bottom">
+        <div class="wrap inner">
+            <div class="header-bottom__inner">
+                <div class="mini-logo">
+                    <img src="images/mini-logo.png" alt="Мини-логотип">
+                </div>
+                <div class="frame" id="basic" style="display: flex;">
+                    
+                    <nav class="nav clearfix">
+                        <a class="nav__link link text--medium slidee" href>Акции</a>
+                        <a class="nav__link link text--medium slidee" href>Пицца</a>
+                        <a class="nav__link link text--medium slidee" href>Роллы</a>
+                        <a class="nav__link link text--medium slidee" href>Сеты</a>
+                        <a class="nav__link link text--medium slidee" href>Суши-сендвичи</a>
+                        <a class="nav__link link text--medium slidee" href>WOK</a>
+                        <a class="nav__link link text--medium slidee" href>Streetfood</a>
+                        <a class="nav__link link text--medium slidee" href>Супы и салаты</a>
+                        <a class="nav__link link text--medium slidee" href>Напитки</a>
+                        <a class="nav__link link text--medium slidee" href>Еще</a>
+                    </nav>
+                </div>
+                <button class="burger header__burger white" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%) scale(0.6); color: #fff; width: 43px;"><span class="burger__item burger__item1" style="background-color: #fff"></span><span class="burger__item burger__item2" style="background-color: #fff"></span><span class="burger__item burger__item3" style="background-color: #fff"></span><span class="burger__item burger__item4" style="background-color: #fff"></span><span class="burger__item burger__item5" style="background-color: #fff"></span></button>
+
+                <div class="scrollbar">
+                    <div class="handle"></div>
+                </div>
+                <div class="header-bottom__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header-bottom__form-promocode.form-promocode.form-promocode--disabled(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+            <form action="" class="header__form-promocode header-bottom__basket">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header-bottom__basket">
+                    <span class="basket__text text--medium">Корзина</span><span class="basket__count text--medium">2</span>
+                    </button>
+                    <form class="header-bottom__basket-info basket-info" action method>
+                        <div class="basket-info__list"></div>
+                        <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">440 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                        <div class="basket-info__empty-basket">
+                            <div class="basket-info__status"></div>
+                            <div class="basket-info__list">
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                 <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">880 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__bg">
+                <div class="mobile-menu__inner">
+                    <div class="mobile-menu__block"><a class="mobile-menu__auth" href>
+                            Войти</a></div>
+                    <div class="mobile-menu__block"><a class="mobile-menu__link text--medium" href>Акции и новости</a><a class="mobile-menu__link text--medium" href>О нас</a><a class="mobile-menu__link text--medium" href>Вакансии</a><a class="mobile-menu__link text--medium" href>Контакты</a><a class="mobile-menu__link text--medium" href>Ищем поставщиков</a><a class="mobile-menu__link text--medium" href>Предложить помещение</a></div>
+                    <div class="mobile-menu__block">
+                        <div class="city mobile-menu__city">
+                            <p class="city__label text--medium">Ваш город: <span class="city__value city__value--white">Барнаул</span></p>
+                        </div>
+                        <div class="contacts mobile-menu__contacts"><a class="contacts__number mobile-menu__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                            <p class="contacts__desc mobile-menu__desc text--small">Сегодня 09:00 - 23:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="breadcrumbs">
+        <div class="wrap inner">
+            <div class="breadcrumbs__inner"><a class="breadcrumbs__item text--medium" href>Главная</a>
+                <div class="breadcrumbs__item-border">
+                    <img src="images/food.svg" alt="Пицца" style="transform: rotate(90deg);">
+                </div>
+                <a class="breadcrumbs__item text--medium" href>Вакансии</a>
+                <div class="breadcrumbs__item-border">
+                    <img src="images/food.svg" alt="Пицца" style="transform: rotate(90deg);">
+                </div>
+                <div class="breadcrumbs__item text--medium">Менеджер смены</div>
+            </div>
+
+        </div>
+    </section>
+    <div class="section job">
+        <div class="inner wrap">
+            <div class="job__inner">
+                <div class="job__header">
+                    <h1 class="title--big job__title">Менеджер смены</h1><a
+                        class="button button--fill text--medium job__button" href>Откликнуться</a>
+                </div>
+                <div class="job__img">
+                    <picture>
+                        <source srcset="images/job3.png" media="(max-width: 768px)">
+                        <source srcset="images/job2.png" media="(max-width: 1287px)"><img src="images/job1.png"
+                            alt="article">
+                    </picture>
+                </div><a class="button button--fill text--medium job__button-mobile" href>Откликнуться</a>
+                <div class="job__desc"><span>Почему мы называем себя НОМЕР 1? Да, мы не первые, кто показал городу
+                        шаурму, и не единственные, кто готовит пиццу и воки в коробочках. Так почему же? Все
+                        просто</span><span>Вы любите кушать. Вкусно кушать. Даже слишком вкусно. А мы умеем готовить до
+                        невозможности аппетитную и суперсытную еду, что просто пальчики оближешь! Наша компания рождена
+                        для того, чтобы одна только мысль о нашем меню заставляла слюнки течь, а желудки - радоваться.
+                        Чтобы работать со всей душой и ловить от этого кайф. Чтобы делать вас и вашу семью улыбчивыми и
+                        счастливыми. Чтобы быть для вас лучшими, а значит НОМЕРОМ 1.</span></div>
+                <div class="job__line">
+                    <div class="job__item">
+                        <div class="job__subtitle title">Обязанности</div>
+                        <div class="job__list"><span class="job__text">Адаптация и обучение новых
+                                сотрудников;</span><span class="job__text">Контроль качества готовой
+                                продукции;</span><span class="job__text">Выполнение поручений директора
+                                ресторана;</span><span class="job__text">Разделение и донесение до сотрудников ценностей
+                                компании;</span><span class="job__text">Участие в инвентаризациях;</span><span
+                                class="job__text">Работа на закрепленной станции поваром;</span><span
+                                class="job__text">Контроль соблюдения санитарных норм и правил.</span></div>
+                    </div>
+                    <div class="job__item">
+                        <div class="job__subtitle title">Требования</div>
+                        <div class="job__list"><span class="job__text">Опыт работы на аналогичной должности ;</span><span class="job__text">Лидерские качества, управленческие навыки;</span><span class="job__text">Выполнение поручений директора
+                                ресторана;</span><span class="job__text">Знание санитарных норм и правил;</span><span class="job__text">Опыт руководства коллективом и работы с персоналом;</span><span
+                                class="job__text">Готовность к работе в режиме многозадачности.</span></div>
+                    </div>
+                    <div class="job__item">
+                        <div class="job__subtitle title">Мы предлагаем</div>
+                        <div class="job__list"><span class="job__text">Официальное трудоустройство по ТК РФ;</span><span class="job__text">Стабильные выплаты з/п 2 раза в месяц;</span><span class="job__text">Прозрачная система карьерного роста;
+                                </span><span class="job__text">Посещение профессиональных мероприятий за счет компании.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="jobs">
+        <div class="wrap inner">
+            <div class="jobs__inner">
+                <h2 class="title--medium jobs__title">Другие вакансии</h2>
+                <div class="jobs__list">
+                    <div class="jobs__item-wrap">
+                        <div class="jobs__item">
+                            <div class="jobs__img"><img src="images/vakancy/vak_1.png" alt="jobs"></div>
+                            <div class="jobs__content">
+                                <h3 class="title jobs__subtitle">Пиццамейкер</h3>
+                                <p class="text--medium jobs__text">Готовит пиццы и закуски, нарезает и фасует продукты, поддерживает чистоту</p>
+                                <div class="jobs__line"><a class="button button--fill text--medium jobs__button"
+                                        href>Откликнуться</a><a class="button button--common text--medium jobs__button"
+                                        href>Подробнее</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobs__item-wrap">
+                        <div class="jobs__item">
+                            <div class="jobs__img"><img src="images/vakancy/vak_2.png" alt="jobs"></div>
+                            <div class="jobs__content">
+                                <h3 class="title jobs__subtitle">Кассир</h3>
+                                <p class="text--medium jobs__text">Дарит радость гостям в ресторане, принимает и выдает заказы, поддерживает чистоту в зале</p>
+                                <div class="jobs__line"><a class="button button--fill text--medium jobs__button"
+                                        href>Откликнуться</a><a class="button button--common text--medium jobs__button"
+                                        href>Подробнее</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobs__item-wrap">
+                        <div class="jobs__item">
+                            <div class="jobs__img"><img src="images/vakancy/vak_3.png" alt="jobs"></div>
+                            <div class="jobs__content">
+                                <h3 class="title jobs__subtitle">Курьер</h3>
+                                <p class="text--medium jobs__text">Быстро и аккуратно водит, доставляет пиццу и дарит клиентам счастье</p>
+                                <div class="jobs__line"><a class="button button--fill text--medium jobs__button"
+                                        href>Откликнуться</a><a class="button button--common text--medium jobs__button"
+                                        href>Подробнее</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrap inner">
+            <div class="footer__inner">
+                <div class="footer__about footer__block">
+                    <div class="footer__logo"><img src="images_2/logo.png" alt="logo"></div>
+                    <div class="footer__desc text--medium">Современный сервис доставки в Тамбове.</div><a class="footer__link text--medium" href>Политика конфиденциальности</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Меню</h3><a class="footer__link text--medium" href>Пицца</a><a class="footer__link text--medium" href>Роллы</a><a class="footer__link text--medium" href>WOK</a><a class="footer__link text--medium" href>Все меню</a><a class="footer__link text--medium" href>Акции</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Информация</h3><a class="footer__link text--medium" href>О нас</a><a class="footer__link text--medium" href>Доставка и оплата</a><a class="footer__link text--medium" href>Вакансии</a><a class="footer__link text--medium" href>Urban Delivery</a><a class="footer__link text--medium" href>Контакты</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Партнерам</h3><a class="footer__link text--medium" href>Приглашаем партнёров</a><a class="footer__link text--medium" href>Предложить помещение</a>
+                </div>
+                <div class="footer__contacts contacts footer__block"><a class="contacts__number footer__number link title--small" href="tel:8(929)397-17-76">8 (920) 482-90-90</a>
+                    <p class="contacts__desc text--small">Ежедневно: 10:00 - 23:00</p><a class="contacts__mail text--medium" href="mailto:UrbanFood.dostavka@gmail.com">UrbanFood.dostavka@gmail.com</a>
+                    <div class="footer__social-icons social-icons"><a class="social-icons__item social-icons__item--white" href>
+                            <i class="fab fa-vk"></i></a><a class="social-icons__item social-icons__item--white">
+                                  <object type="image/svg+xml" data="images_2/instagram.svg" width="20" height="20">
+                                 <img src="images_2/instagram.svg" width="20" height="20" alt="insta" />
+                              </object>
+                        </a></div>
+                </div>
+                <div class="payments-icons">
+                        <img src="images_2/MIR Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Visa Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Mastercard Icon SVG Monochrome.svg" alt="">
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup jobs-popup">
+        <div class="inner">
+            <div class="popup__inner">
+                <div class="popup__close"></div>
+                <div class="popup__title title--big">Типовой попап</div>
+                <div class="popup__text text--medium">Почему мы называем себя НОМЕР 1? Да, мы не первые, кто показал
+                    городу шаурму, и не единственные, кто готовит пиццу и воки в коробочках. Так почему же? Все просто
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="recommend">
+        <div class="inner">
+            <div class="popup__inner recommend-popup">
+                <div class="popup__close"></div>
+                <div class="popup__body">
+                    <div class="popup__title title--big">
+                        Вам обязательно понравиться вкусная <span class="recommend-popup__name">Пеперони </span>:)</div>
+                    <div class="popup__line">
+                        <div class="popup__img"><img src="images/popup.png" alt="product"></div>
+                        <form class="popup__content" action metrhod="post">
+                            <h3 class="card__title title">Пепперони
+                                <div class="card__feature"></div>
+                            </h3>
+                            <div class="card__line">
+                                <p class="card__price">400</p>
+                            </div>
+                            <p class="card__desc text--medium">Оригинальные колбаски колбаски колбаски колбаски колбаски
+                                колбаски колбаски колбаски колбаски пепперони, сыр моцарелла, пицца-соус,
+                                орегано.пицца-соус, орегано.пицца-соус, орегано. </p>
+                            <div class="card__spec-list">
+                                <div class="card__line">
+                                    <input class="card__radio" type="radio" name="product1-spec"
+                                        id="product1-spec-small" value="25см" checked>
+                                    <label class="card__label" for="product1-spec-small">25см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec"
+                                        id="product1-spec-medium" value="30см">
+                                    <label class="card__label" for="product1-spec-medium">30см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-big"
+                                        value="35см">
+                                    <label class="card__label" for="product1-spec-big">35см</label>
+                                </div>
+                            </div>
+                            <div class="card__panel">
+                                <button class="popup__button button button--common text--medium">
+                                    В корзину</button>
+                                <button class="popup__button button button--fill text--medium">Быстрый заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/jquery-2.1.1.min.js"></script>
+    <script src="static/jquery.sticky.js"></script>
+    <script src="js/sly.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".header-bottom").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+        $(document).ready(function () {
+            $(".mobile-menu__bg").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+    </script>
+</body>
+
+</html>

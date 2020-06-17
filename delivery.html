@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="static/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+    <title>Доставка пиццы</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./static/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff"></head>
+<body class="page">
+
+    <section class="message">
+        <div class="wrap inner">
+            <div class="message__inner text--medium">
+                <svg class="icon icon-alert-circle message__svg">
+                    <use xlink:href="static/sprite.svg#alert-circle"/>
+                </svg>Заказ с сайта сегодня не доступен. Ведуться технические работы
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="wrap inner">
+            <div class="header__inner">
+                <div class="header__line"><a class="header__logo" href>
+                    <img src="./images_2/logoBlack.png" alt="logo" class="header-bottom__basket">
+                    <img src="./images_2/logoLongBlack.png" class="logo_horis" alt="logo"></a>
+                    <div class="header__block city header__city">
+                        <p class="city__label text--medium">Ваш город: <span class="city__value">Барнаул</span></p>
+                        <p class="city__desc text--small">Доставка за 59 мин.</p>
+                    </div>
+                    <div class="header__block contacts header__contacts"><a class="contacts__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                        <p class="contacts__desc text--small">Сегодня 09:00 - 23:00</p>
+                    </div>
+                    <div class="header__social-icons social-icons">
+                            <a class="social-icons__item" href><i class="fab fa-vk"></i></a>
+                            <a class="social-icons__item"> <i class="fab fa-instagram"></i> </a>
+                        </div>
+                   
+                </div>
+                  <div class="header__block contacts header__contacts">
+                        <a class="contacts__number link text--medium">Urban Delivery</a>
+                    </div>
+                <div class="header__auth auth"><a class="auth__link" href>
+                            <img src="images_2/key.svg" alt="logo">
+                            <span class="auth__text">Войти</span></a></div>
+                <div class="header__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header__form-promocode.form-promocode.form-promocode--error(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                 button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+                   <form action="" class="header__form-promocode">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header__busket">
+                        <img src="images_2/shopping-bag.svg" alt="logo"><span class="basket__count text--medium">2</span>
+                    </button>
+                    <button class="burger header__burger"><span class="burger__item burger__item1"></span><span class="burger__item burger__item2"></span><span class="burger__item burger__item3"></span><span class="burger__item burger__item4"></span><span class="burger__item burger__item5"></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="header-bottom">
+        <div class="wrap inner">
+            <div class="header-bottom__inner">
+                <div class="mini-logo">
+                    <img src="images/mini-logo.png" alt="Мини-логотип">
+                </div>
+                <div class="frame" id="basic" style="display: flex;">
+                    
+                    <nav class="nav clearfix">
+                        <a class="nav__link link text--medium slidee" href>Акции</a>
+                        <a class="nav__link link text--medium slidee" href>Пицца</a>
+                        <a class="nav__link link text--medium slidee" href>Роллы</a>
+                        <a class="nav__link link text--medium slidee" href>Сеты</a>
+                        <a class="nav__link link text--medium slidee" href>Суши-сендвичи</a>
+                        <a class="nav__link link text--medium slidee" href>WOK</a>
+                        <a class="nav__link link text--medium slidee" href>Streetfood</a>
+                        <a class="nav__link link text--medium slidee" href>Супы и салаты</a>
+                        <a class="nav__link link text--medium slidee" href>Напитки</a>
+                        <a class="nav__link link text--medium slidee" href>Еще</a>
+                    </nav>
+                </div>
+                <button class="burger header__burger white" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%) scale(0.6); color: #fff; width: 43px;"><span class="burger__item burger__item1" style="background-color: #fff"></span><span class="burger__item burger__item2" style="background-color: #fff"></span><span class="burger__item burger__item3" style="background-color: #fff"></span><span class="burger__item burger__item4" style="background-color: #fff"></span><span class="burger__item burger__item5" style="background-color: #fff"></span></button>
+
+                <div class="scrollbar">
+                    <div class="handle"></div>
+                </div>
+                <div class="header-bottom__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header-bottom__form-promocode.form-promocode.form-promocode--disabled(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+            <form action="" class="header__form-promocode header-bottom__basket">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header-bottom__basket">
+                    <span class="basket__text text--medium">Корзина</span><span class="basket__count text--medium">2</span>
+                    </button>
+                    <form class="header-bottom__basket-info basket-info" action method>
+                        <div class="basket-info__list"></div>
+                        <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">440 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                        <div class="basket-info__empty-basket">
+                            <div class="basket-info__status"></div>
+                            <div class="basket-info__list">
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                 <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">880 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__bg">
+                <div class="mobile-menu__inner">
+                    <div class="mobile-menu__block"><a class="mobile-menu__auth" href>
+                            Войти</a></div>
+                    <div class="mobile-menu__block"><a class="mobile-menu__link text--medium" href>Акции и новости</a><a class="mobile-menu__link text--medium" href>О нас</a><a class="mobile-menu__link text--medium" href>Вакансии</a><a class="mobile-menu__link text--medium" href>Контакты</a><a class="mobile-menu__link text--medium" href>Ищем поставщиков</a><a class="mobile-menu__link text--medium" href>Предложить помещение</a></div>
+                    <div class="mobile-menu__block">
+                        <div class="city mobile-menu__city">
+                            <p class="city__label text--medium">Ваш город: <span class="city__value city__value--white">Барнаул</span></p>
+                        </div>
+                        <div class="contacts mobile-menu__contacts"><a class="contacts__number mobile-menu__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                            <p class="contacts__desc mobile-menu__desc text--small">Сегодня 09:00 - 23:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="breadcrumbs">
+        <div class="wrap inner">
+            <div class="breadcrumbs__inner"><a class="breadcrumbs__item text--medium" href>Главная</a>
+                <div class="breadcrumbs__item-border">
+                    <img src="images/food.svg" alt="Пицца" style="transform: rotate(90deg);">
+                </div>
+                <div class="breadcrumbs__item text--medium">Доставка и оплата</div>
+            </div>
+        </div>
+    </section>
+    <section class="delivery">
+        <div class="wrap inner">
+            <div class="delivery__inner">
+                <h1 class="delivery__title title--big">Доставка и оплата</h1>
+                <div class="delivery__map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2a880152508644e10a6d76ba2b8a55b423ccec2038eab9ad763c3502e49b761a&amp;width=100%&amp;height=465&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="delivery__list" style="margin-top: 40px;">
+         
+                        <div class="delivery__item delivery__time-block">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 0C11.215 0 0 11.215 0 25C0 38.785 11.215 50 25 50C38.785 50 50 38.785 50 25C50 11.215 38.785 0 25 0ZM25 48.3333C12.1342 48.3333 1.66667 37.8658 1.66667 25C1.66667 12.1342 12.1342 1.66667 25 1.66667C37.8658 1.66667 48.3333 12.1342 48.3333 25C48.3333 37.8658 37.8658 48.3333 25 48.3333Z" fill="white"/>
+                                <path d="M25.8333 21.6839V13.2323C25.8333 12.7714 25.46 12.3989 25 12.3989C24.54 12.3989 24.1667 12.7714 24.1667 13.2323V21.6839C23.0008 21.9873 22.0883 22.8998 21.785 24.0656H15.8333C15.3733 24.0656 15 24.4381 15 24.8989C15 25.3598 15.3733 25.7323 15.8333 25.7323H21.785C22.1575 27.1656 23.4517 28.2323 25 28.2323C26.8383 28.2323 28.3333 26.7373 28.3333 24.8989C28.3333 23.3498 27.2667 22.0564 25.8333 21.6839ZM25 26.5656C24.0808 26.5656 23.3333 25.8181 23.3333 24.8989C23.3333 23.9798 24.0808 23.2323 25 23.2323C25.9192 23.2323 26.6667 23.9798 26.6667 24.8989C26.6667 25.8181 25.9192 26.5656 25 26.5656Z" fill="white"/>
+                                <path d="M25.0013 8.23242C25.4613 8.23242 25.8346 7.85992 25.8346 7.39909V6.56576C25.8346 6.10492 25.4613 5.73242 25.0013 5.73242C24.5413 5.73242 24.168 6.10492 24.168 6.56576V7.39909C24.168 7.85992 24.5413 8.23242 25.0013 8.23242Z" fill="white"/>
+                                <path d="M25.0013 41.5659C24.5413 41.5659 24.168 41.9384 24.168 42.3993V43.2326C24.168 43.6934 24.5413 44.0659 25.0013 44.0659C25.4613 44.0659 25.8346 43.6934 25.8346 43.2326V42.3993C25.8346 41.9384 25.4613 41.5659 25.0013 41.5659Z" fill="white"/>
+                                <path d="M43.3346 24.0659H42.5013C42.0413 24.0659 41.668 24.4384 41.668 24.8993C41.668 25.3601 42.0413 25.7326 42.5013 25.7326H43.3346C43.7946 25.7326 44.168 25.3601 44.168 24.8993C44.168 24.4384 43.7946 24.0659 43.3346 24.0659Z" fill="white"/>
+                                <path d="M7.4987 24.0659H6.66536C6.20536 24.0659 5.83203 24.4384 5.83203 24.8993C5.83203 25.3601 6.20536 25.7326 6.66536 25.7326H7.4987C7.9587 25.7326 8.33203 25.3601 8.33203 24.8993C8.33203 24.4384 7.9587 24.0659 7.4987 24.0659Z" fill="white"/>
+                                <path d="M37.3746 11.3456L36.7854 11.9348C36.4596 12.2606 36.4596 12.7873 36.7854 13.1131C36.9479 13.2756 37.1612 13.3573 37.3746 13.3573C37.5879 13.3573 37.8012 13.2756 37.9637 13.1131L38.5529 12.524C38.8787 12.1981 38.8787 11.6715 38.5529 11.3456C38.2271 11.0198 37.7004 11.0206 37.3746 11.3456Z" fill="white"/>
+                                <path d="M12.0367 36.684L11.4475 37.2732C11.1217 37.599 11.1217 38.1257 11.4475 38.4515C11.61 38.614 11.8233 38.6957 12.0367 38.6957C12.25 38.6957 12.4633 38.614 12.6258 38.4515L13.215 37.8623C13.5408 37.5365 13.5408 37.0098 13.215 36.684C12.8892 36.3582 12.3617 36.359 12.0367 36.684Z" fill="white"/>
+                                <path d="M37.9637 36.6843C37.6379 36.3585 37.1112 36.3585 36.7854 36.6843C36.4596 37.0101 36.4596 37.5368 36.7854 37.8627L37.3746 38.4518C37.5371 38.6143 37.7504 38.696 37.9637 38.696C38.1771 38.696 38.3904 38.6143 38.5529 38.4518C38.8787 38.126 38.8787 37.5993 38.5529 37.2735L37.9637 36.6843Z" fill="white"/>
+                                <path d="M12.6258 11.3459C12.3 11.0201 11.7733 11.0201 11.4475 11.3459C11.1217 11.6718 11.1217 12.1984 11.4475 12.5243L12.0367 13.1134C12.1992 13.2759 12.4125 13.3576 12.6258 13.3576C12.8392 13.3576 13.0525 13.2759 13.215 13.1134C13.5408 12.7876 13.5408 12.2609 13.215 11.9351L12.6258 11.3459Z" fill="white"/>
+                                </svg>
+                                
+                            <h5 class="delivery__item-title title">Режим работы</h5>
+                            <div class="delivery__opmode opmode">
+                                <div class="opmode__block">
+                                    <h6 class="opmode__title">Доставка</h6>
+                                    <p class="opmode__time text--medium"> <span>11.00 - 24.00</span></p>
+                                </div>
+                                <div class="opmode__block">
+                                    <h6 class="opmode__title">Прием заказов</h6>
+                                    <p class="opmode__time text--medium"><span>10.00 - 23.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__item">
+                            <svg width="42" height="50" viewBox="0 0 42 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.0013 22.5002C21.4615 22.5002 21.8346 22.1271 21.8346 21.6668C21.8346 21.2066 21.4615 20.8335 21.0013 20.8335C20.5411 20.8335 20.168 21.2066 20.168 21.6668C20.168 22.1271 20.5411 22.5002 21.0013 22.5002Z" fill="#F1891F"/>
+                                <path d="M23.5013 20.8332C23.9615 20.8332 24.3346 20.4601 24.3346 19.9998C24.3346 19.5396 23.9615 19.1665 23.5013 19.1665C23.0411 19.1665 22.668 19.5396 22.668 19.9998C22.668 20.4601 23.0411 20.8332 23.5013 20.8332Z" fill="#F1891F"/>
+                                <path d="M18.5013 20.8332C18.9615 20.8332 19.3346 20.4601 19.3346 19.9998C19.3346 19.5396 18.9615 19.1665 18.5013 19.1665C18.0411 19.1665 17.668 19.5396 17.668 19.9998C17.668 20.4601 18.0411 20.8332 18.5013 20.8332Z" fill="#F1891F"/>
+                                <path d="M16.0013 19.1667C16.4615 19.1667 16.8346 18.7936 16.8346 18.3333C16.8346 17.8731 16.4615 17.5 16.0013 17.5C15.5411 17.5 15.168 17.8731 15.168 18.3333C15.168 18.7936 15.5411 19.1667 16.0013 19.1667Z" fill="#F1891F"/>
+                                <path d="M26.0013 19.1667C26.4615 19.1667 26.8346 18.7936 26.8346 18.3333C26.8346 17.8731 26.4615 17.5 26.0013 17.5C25.5411 17.5 25.168 17.8731 25.168 18.3333C25.168 18.7936 25.5411 19.1667 26.0013 19.1667Z" fill="#F1891F"/>
+                                <path d="M28.5013 17.5002C28.9615 17.5002 29.3346 17.1271 29.3346 16.6668C29.3346 16.2066 28.9615 15.8335 28.5013 15.8335C28.0411 15.8335 27.668 16.2066 27.668 16.6668C27.668 17.1271 28.0411 17.5002 28.5013 17.5002Z" fill="#F1891F"/>
+                                <path d="M13.5013 17.5002C13.9615 17.5002 14.3346 17.1271 14.3346 16.6668C14.3346 16.2066 13.9615 15.8335 13.5013 15.8335C13.0411 15.8335 12.668 16.2066 12.668 16.6668C12.668 17.1271 13.0411 17.5002 13.5013 17.5002Z" fill="#F1891F"/>
+                                <path d="M21.0013 19.1667C21.4615 19.1667 21.8346 18.7936 21.8346 18.3333C21.8346 17.8731 21.4615 17.5 21.0013 17.5C20.5411 17.5 20.168 17.8731 20.168 18.3333C20.168 18.7936 20.5411 19.1667 21.0013 19.1667Z" fill="#F1891F"/>
+                                <path d="M21.0013 29.1667C21.4615 29.1667 21.8346 28.7936 21.8346 28.3333C21.8346 27.8731 21.4615 27.5 21.0013 27.5C20.5411 27.5 20.168 27.8731 20.168 28.3333C20.168 28.7936 20.5411 29.1667 21.0013 29.1667Z" fill="#F1891F"/>
+                                <path d="M21.0013 31.6667C21.4615 31.6667 21.8346 31.2936 21.8346 30.8333C21.8346 30.3731 21.4615 30 21.0013 30C20.5411 30 20.168 30.3731 20.168 30.8333C20.168 31.2936 20.5411 31.6667 21.0013 31.6667Z" fill="#F1891F"/>
+                                <path d="M21.0013 34.1667C21.4615 34.1667 21.8346 33.7936 21.8346 33.3333C21.8346 32.8731 21.4615 32.5 21.0013 32.5C20.5411 32.5 20.168 32.8731 20.168 33.3333C20.168 33.7936 20.5411 34.1667 21.0013 34.1667Z" fill="#F1891F"/>
+                                <path d="M21.0013 36.6667C21.4615 36.6667 21.8346 36.2936 21.8346 35.8333C21.8346 35.3731 21.4615 35 21.0013 35C20.5411 35 20.168 35.3731 20.168 35.8333C20.168 36.2936 20.5411 36.6667 21.0013 36.6667Z" fill="#F1891F"/>
+                                <path d="M21.0013 39.1667C21.4615 39.1667 21.8346 38.7936 21.8346 38.3333C21.8346 37.8731 21.4615 37.5 21.0013 37.5C20.5411 37.5 20.168 37.8731 20.168 38.3333C20.168 38.7936 20.5411 39.1667 21.0013 39.1667Z" fill="#F1891F"/>
+                                <path d="M21.0013 41.6667C21.4615 41.6667 21.8346 41.2936 21.8346 40.8333C21.8346 40.3731 21.4615 40 21.0013 40C20.5411 40 20.168 40.3731 20.168 40.8333C20.168 41.2936 20.5411 41.6667 21.0013 41.6667Z" fill="#F1891F"/>
+                                <path d="M41.0013 48.3333H38.5013V45H34.3346V36.4817C34.3346 34.2317 33.2163 32.1417 31.3438 30.8933L22.5038 25L31.3438 19.1067C33.2163 17.8583 34.3346 15.7683 34.3346 13.5183V5H38.5013V1.66667H41.0013C41.4613 1.66667 41.8346 1.29417 41.8346 0.833333C41.8346 0.3725 41.4613 0 41.0013 0H38.5013H37.668H4.33464H3.5013H1.0013C0.541302 0 0.167969 0.3725 0.167969 0.833333C0.167969 1.29417 0.541302 1.66667 1.0013 1.66667H3.5013V5H7.66797V13.5183C7.66797 15.7683 8.7863 17.8583 10.6588 19.1067L19.4988 25L10.6588 30.8933C8.7863 32.1417 7.66797 34.2317 7.66797 36.4817V45H3.5013V48.3333H1.0013C0.541302 48.3333 0.167969 48.7058 0.167969 49.1667C0.167969 49.6275 0.541302 50 1.0013 50H3.5013H4.33464H37.668H38.5013H41.0013C41.4613 50 41.8346 49.6275 41.8346 49.1667C41.8346 48.7058 41.4613 48.3333 41.0013 48.3333ZM5.16797 3.33333V1.66667H36.8346V3.33333H34.3346H7.66797H5.16797ZM11.583 17.72C10.1755 16.7808 9.33464 15.21 9.33464 13.5183V5H32.668V13.5183C32.668 15.21 31.8271 16.7808 30.4196 17.72L21.0013 23.9983L11.583 17.72ZM9.33464 36.4817C9.33464 34.79 10.1755 33.2192 11.583 32.28L21.0013 26.0017L30.4196 32.28C31.8271 33.2192 32.668 34.79 32.668 36.4817V45H9.33464V36.4817ZM5.16797 46.6667H7.66797H34.3346H36.8346V48.3333H5.16797V46.6667Z" fill="#F1891F"/>
+                                </svg>
+                                
+                            <h5 class="delivery__item-title title">Доставка от 39 минут</h5>
+                            <p class="delivery__item-text text--medium">Среднее время доставки по городу!</p>
+                        </div>
+                        <div class="delivery__item">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M26.2974 44.1665H23.7027C23.2422 44.1665 22.8691 44.5396 22.8691 45C22.8691 45.4601 23.2422 45.8331 23.7027 45.8331H26.2974C26.7578 45.8331 27.1309 45.4601 27.1309 45C27.1309 44.5396 26.7578 44.1665 26.2974 44.1665Z" fill="#F1891F"/>
+                                <path d="M38.4041 44.1665H35.8101C35.3496 44.1665 34.9766 44.5396 34.9766 45C34.9766 45.4601 35.3496 45.8331 35.8101 45.8331H38.4041C38.8645 45.8331 39.2376 45.4601 39.2376 45C39.2376 44.5396 38.8645 44.1665 38.4041 44.1665Z" fill="#F1891F"/>
+                                <path d="M32.3513 44.1665H29.757C29.2969 44.1665 28.9238 44.5396 28.9238 45C28.9238 45.4601 29.2969 45.8331 29.757 45.8331H32.3513C32.8114 45.8331 33.1845 45.4601 33.1845 45C33.1845 44.5396 32.8114 44.1665 32.3513 44.1665Z" fill="#F1891F"/>
+                                <path d="M44.4588 44.1665H41.8644C41.4043 44.1665 41.0312 44.5396 41.0312 45C41.0312 45.4601 41.4043 45.8331 41.8644 45.8331H44.4588C44.9188 45.8331 45.2919 45.4601 45.2919 45C45.2919 44.5396 44.9188 44.1665 44.4588 44.1665Z" fill="#F1891F"/>
+                                <path d="M14.1892 44.1665H11.5952C11.1348 44.1665 10.7617 44.5396 10.7617 45C10.7617 45.4601 11.1348 45.8331 11.5952 45.8331H14.1892C14.6497 45.8331 15.0227 45.4601 15.0227 45C15.0227 44.5396 14.6497 44.1665 14.1892 44.1665Z" fill="#F1891F"/>
+                                <path d="M20.2439 44.1665H17.6495C17.1895 44.1665 16.8164 44.5396 16.8164 45C16.8164 45.4601 17.1895 45.8331 17.6495 45.8331H20.2439C20.704 45.8331 21.077 45.4601 21.077 45C21.077 44.5396 20.704 44.1665 20.2439 44.1665Z" fill="#F1891F"/>
+                                <path d="M8.13649 44.1665H5.54211C5.08206 44.1665 4.70898 44.5396 4.70898 45C4.70898 45.4601 5.08206 45.8331 5.54211 45.8331H8.13649C8.59654 45.8331 8.96962 45.4601 8.96962 45C8.96962 44.5396 8.59654 44.1665 8.13649 44.1665Z" fill="#F1891F"/>
+                                <path d="M47.4998 0H2.50015C1.11923 0 0 1.11923 0 2.50015V9.16672C0 9.62677 0.373077 9.99985 0.833511 9.99985H2.41661L6.61926 25.7641L0.0717163 40.4949V40.5033C0.0717163 40.5117 0.0675201 40.5216 0.063324 40.5315C0.030899 40.6166 0.0129699 40.7066 0.00991816 40.7974C0.00991816 40.81 0.00267029 40.8207 0.00267029 40.8333V48.3334C0.00267029 49.2538 0.748825 50 1.66931 50H48.3334C49.2538 50 50 49.2538 50 48.3334V40.8333C50 40.8207 49.9935 40.81 49.9924 40.7982C49.9897 40.707 49.9718 40.6166 49.9393 40.5308C49.9352 40.5216 49.934 40.5117 49.931 40.5033V40.4949L43.3807 25.7641L47.5834 9.99985H49.1665C49.6269 9.99985 50 9.62677 50 9.16672V2.50015C50 1.11923 48.8808 0 47.4998 0V0ZM8.04176 26.6666H14.2418C13.95 26.7609 13.6585 26.8543 13.3801 26.9558C13.3625 26.9627 13.345 26.965 13.3282 26.9726C9.53331 28.3691 7.06596 30.4516 6.7276 32.8377C6.71349 32.8918 6.70509 32.9479 6.70242 33.004C6.70242 33.0109 6.70662 33.0158 6.70738 33.0227C6.69594 33.1493 6.66656 33.2726 6.66656 33.4V36.8999C6.69937 38.055 7.15485 39.1582 7.94678 40.0002H2.11334L8.04176 26.6666ZM41.2758 32.0641L28.9707 31.4484L36.34 28.6152C38.8374 29.5624 40.5567 30.7892 41.2758 32.0641ZM36.1317 40.0002C36.2633 39.9551 36.3998 39.9166 36.5292 39.8666C36.5559 39.8609 36.5807 39.8491 36.6074 39.8407C38.4842 39.2227 40.2088 38.2137 41.6668 36.8801V36.8958C41.6668 38.2107 40.5674 39.2876 39.5649 40.0002H36.1317ZM10.4351 40.0002C9.4326 39.2876 8.33321 38.2107 8.33321 36.8958V36.8801C9.79118 38.2137 11.5158 39.2227 13.3926 39.8407C13.4193 39.8491 13.4441 39.8609 13.4708 39.8666C13.6002 39.9132 13.7367 39.9551 13.8683 40.0002H10.4351ZM36.4407 38.1409L28.2082 33.0784L41.6248 33.7502C41.3776 35.3416 39.5134 36.9507 36.4407 38.1409ZM25.8335 39.9826V33.5743L34.3716 38.8241C31.5849 39.5641 28.7167 39.9532 25.8335 39.9826ZM8.37898 33.7502L21.7957 33.0784L13.5632 38.1409C10.4866 36.9507 8.62236 35.3416 8.37898 33.7502ZM24.1665 33.5743V39.9826C21.2833 39.954 18.4151 39.5653 15.6284 38.826L24.1665 33.5743ZM24.1665 30.8701L16.2201 27.8118C18.8225 27.177 21.4882 26.841 24.1665 26.8093V30.8701ZM13.66 28.6118L21.0293 31.4449L8.72421 32.061C9.44328 30.7892 11.1668 29.5624 13.66 28.6118ZM25.8335 30.8701V26.8093C28.5114 26.8402 31.1775 27.1755 33.7799 27.8091L25.8335 30.8701ZM1.66664 48.3334V45.8332H2.08321C2.54364 45.8332 2.91672 45.4601 2.91672 45.0001C2.91672 44.5396 2.54364 44.1666 2.08321 44.1666H1.66664V41.6668H48.3334V44.1666H47.9168C47.4564 44.1666 47.0833 44.5396 47.0833 45.0001C47.0833 45.4601 47.4564 45.8332 47.9168 45.8332H48.3334V48.3334H1.66664ZM42.0532 40.0002C42.8463 39.1571 43.3018 38.0524 43.3334 36.8958V33.3958C43.3334 33.2684 43.3041 33.1459 43.2926 33.0185C43.2926 33.0116 43.2968 33.0067 43.2976 33.0002C43.2949 32.9437 43.2865 32.888 43.2724 32.8335C42.934 30.4474 40.4667 28.3649 36.6726 26.9691C36.655 26.9608 36.6367 26.9573 36.6184 26.9508C36.3407 26.849 36.0493 26.7567 35.7582 26.6624H41.9582L47.884 39.996L42.0532 40.0002ZM41.8598 25H8.14018L4.14009 9.99985H45.8576L41.8598 25ZM30.8334 8.33321H19.1666V6.66656C19.1666 6.20651 19.5396 5.83344 20.0001 5.83344H29.9999C30.4604 5.83344 30.8334 6.20651 30.8334 6.66656V8.33321ZM48.3334 8.33321H32.5001V6.66656C32.5001 5.28603 31.3808 4.16679 29.9999 4.16679H20.0001C18.6192 4.16679 17.4999 5.28603 17.4999 6.66656V8.33321H1.66664V2.50015C1.66664 2.03972 2.03972 1.66664 2.50015 1.66664H47.4998C47.9603 1.66664 48.3334 2.03972 48.3334 2.50015V8.33321Z" fill="#F1891F"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="50" height="50" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                            <h5 class="delivery__item-title title">география доставки</h5>
+                            <p class="delivery__item-text text--medium">Производим доставку не только в Тамбове, но и за его пределами</p>
+                        </div>
+                
+                    
+                    
+                </div>
+
+                <div>
+                    <h2 class="title">
+                        Зоны доставки
+                    </h2>
+
+                    <div class="zones-list">
+                        <div class="zones-item zones-item--red">
+                            <div class="cart"></div>
+                            <div class="zones-item--info">
+                                <h3 class="title zones-item--title">
+                                    Зона доставки №1
+                                </h3>
+                                <p class="zones-item-description">
+                                    Минимальная сумма заказа 500 рублей
+                                </p>
+                            </div>
+                           
+                        </div>
+                        <div class="zones-item zones-item--gray">
+                            <div class="cart"></div>
+                            <div class="zones-item--info">
+                                <h3 class="title zones-item--title">
+                                    Зона доставки №2
+                                </h3>
+                                <p class="zones-item-description">
+                                    Минимальная сумма заказа 600 рублей
+                                </p>
+                            </div>
+                           
+                        </div>
+                        <div class="zones-item zones-item--yellow">
+                            <div class="cart"></div>
+                            <div class="zones-item--info">
+                                <h3 class="title zones-item--title">
+                                    Зона доставки №3
+                                </h3>
+                                <p class="zones-item-description">
+                                    Минимальная сумма заказа 1200 рублей
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="zones-item zones-item--orange">
+                            <div class="cart"></div>
+                            <div class="zones-item--info">
+                                <h3 class="title zones-item--title">
+                                    Зона доставки №4
+                                </h3>
+                                <p class="zones-item-description">
+                                    Минимальная сумма заказа 1500 рублей
+                                </p>
+                            </div>
+                           
+                        </div>
+                        <div class="zones-item zones-item--green">
+                            <div class="cart"></div>
+                            <div class="zones-item--info">
+                                <h3 class="title zones-item--title">
+                                    Зона доставки №5
+                                </h3>
+                                <p class="zones-item-description">
+                                    Минимальная сумма заказа 2000 рублей
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <h2 class="delivery__title title" style="margin-top: 40px;">Процесс оплаты</h2>
+                <p class="delivery__text text--medium">Оплата происходит через авторизационный сервер Процессингового центра Банка с использованием Банковских кредитных карт следующих платежных систем:</p>
+                <div class="delivery__cards cards">
+                    <div class="cards__item">
+                        <div class="cards__img"><img src="images/card1.png" alt="card"></div>
+                        <div class="cards__text text--medium">VISA International</div>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__img"><img src="images/card2.png" alt="card"></div>
+                        <div class="cards__text text--medium">Мир</div>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__img"><img src="images/card3.png" alt="card"></div>
+                        <div class="cards__text text--medium">Mastercard Worldwide</div>
+                    </div>
+                </div>
+                <div class="delivery__faq faq">
+                    <div class="faq__item">
+                        <h4 class="faq__title title">Описание процесса передачи данных </h4>
+                        <p class="faq__text text--medium">​​Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard SecureCode для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int. и MasterCard Europe Sprl.</p>
+            
+                    </div>
+                    <div class="faq__item">
+                        <h4 class="faq__title title">Описание процессa оплаты </h4>
+                        <p class="faq__text text--medium">При выборе формы оплаты с помощью пластиковой карты проведение платежа по заказу производится непосредственно после его оформления. После завершения оформления заказа в нашем магазине, Вы должны выбрать опцию "Онлайн" в секции "Оплата" формы оформления заказа и после нажать на кнопку "Заказать", при этом система переключит Вас на страницу авторизационного сервера, где Вам будет предложено ввести данные пластиковой карты, инициировать ее авторизацию, после чего вернуться в наш магазин кнопкой "Вернуться в магазин". После того, как Вы возвращаетесь в наш магазин, система уведомит Вас о результатах авторизации. В случае подтверждения авторизации Ваш заказ будет автоматически выполняться в соответствии с заданными Вами условиями. В случае отказа в авторизации карты Вы сможете повторить процедуру оплаты.  </p>
+                    </div>
+                    <div class="faq__item">
+                        <h4 class="faq__title title">При аннулировании заказа </h4>
+                        <p class="faq__text text--medium">В случае возврата произведенной онлайн-оплаты перевод средств производится на Ваш банковский счет в течение 5-30 рабочих дней (срок зависит от Банка, выпустившего Вашу карту) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrap inner">
+            <div class="footer__inner">
+                <div class="footer__about footer__block">
+                    <div class="footer__logo"><img src="images_2/logo.png" alt="logo"></div>
+                    <div class="footer__desc text--medium">Современный сервис доставки в Тамбове.</div><a class="footer__link text--medium" href>Политика конфиденциальности</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Меню</h3><a class="footer__link text--medium" href>Пицца</a><a class="footer__link text--medium" href>Роллы</a><a class="footer__link text--medium" href>WOK</a><a class="footer__link text--medium" href>Все меню</a><a class="footer__link text--medium" href>Акции</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Информация</h3><a class="footer__link text--medium" href>О нас</a><a class="footer__link text--medium" href>Доставка и оплата</a><a class="footer__link text--medium" href>Вакансии</a><a class="footer__link text--medium" href>Urban Delivery</a><a class="footer__link text--medium" href>Контакты</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Партнерам</h3><a class="footer__link text--medium" href>Приглашаем партнёров</a><a class="footer__link text--medium" href>Предложить помещение</a>
+                </div>
+                <div class="footer__contacts contacts footer__block"><a class="contacts__number footer__number link title--small" href="tel:8(929)397-17-76">8 (920) 482-90-90</a>
+                    <p class="contacts__desc text--small">Ежедневно: 10:00 - 23:00</p><a class="contacts__mail text--medium" href="mailto:UrbanFood.dostavka@gmail.com">UrbanFood.dostavka@gmail.com</a>
+                    <div class="footer__social-icons social-icons"><a class="social-icons__item social-icons__item--white" href>
+                            <i class="fab fa-vk"></i></a><a class="social-icons__item social-icons__item--white">
+                                  <object type="image/svg+xml" data="images_2/instagram.svg" width="20" height="20">
+                                 <img src="images_2/instagram.svg" width="20" height="20" alt="insta" />
+                              </object>
+                        </a></div>
+                </div>
+                <div class="payments-icons">
+                        <img src="images_2/MIR Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Visa Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Mastercard Icon SVG Monochrome.svg" alt="">
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="inner">
+            <div class="popup__inner">
+                <div class="popup__close"></div>
+                <div class="popup__title title--big">Типовой попап</div>
+                <div class="popup__text text--medium">Почему мы называем себя НОМЕР 1? Да, мы не первые, кто показал городу шаурму, и не единственные, кто готовит пиццу и воки в коробочках. Так почему же? Все просто</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="recommend">
+        <div class="inner">
+            <div class="popup__inner recommend-popup">
+                <div class="popup__close"></div>
+                <div class="popup__body">
+                    <div class="popup__title title--big">
+                        Вам обязательно понравиться вкусная <span class="recommend-popup__name">Пеперони </span>:)</div>
+                    <div class="popup__line">
+                        <div class="popup__img"><img src="images/popup.png" alt="product"></div>
+                        <form class="popup__content" action metrhod="post">
+                            <h3 class="card__title title">Пепперони
+                                <div class="card__feature"></div>
+                            </h3>
+                            <div class="card__line">
+                                <p class="card__price">400</p>
+                            </div>
+                            <p class="card__desc text--medium">Оригинальные колбаски колбаски колбаски колбаски колбаски колбаски колбаски колбаски колбаски пепперони, сыр моцарелла, пицца-соус, орегано.пицца-соус, орегано.пицца-соус, орегано. </p>
+                            <div class="card__spec-list">
+                                <div class="card__line">
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-small" value="25см" checked>
+                                    <label class="card__label" for="product1-spec-small">25см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-medium" value="30см">
+                                    <label class="card__label" for="product1-spec-medium">30см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-big" value="35см">
+                                    <label class="card__label" for="product1-spec-big">35см</label>
+                                </div>
+                            </div>
+                            <div class="card__panel">
+                                <button class="popup__button button button--common text--medium">
+                                    В корзину</button>
+                                <button class="popup__button button button--fill text--medium">Быстрый заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/jquery-2.1.1.min.js"></script>
+    <script src="static/jquery.sticky.js"></script>
+    <script src="js/sly.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".header-bottom").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+        $(document).ready(function() {
+            $(".mobile-menu__bg").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+    </script>
+</body>
+</html>

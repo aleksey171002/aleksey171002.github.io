@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="static/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+    <title>Доставка пиццы</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./static/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff"></head>
+<body class="page">
+
+    <section class="message">
+        <div class="wrap inner">
+            <div class="message__inner text--medium">
+                <svg class="icon icon-alert-circle message__svg">
+                    <use xlink:href="static/sprite.svg#alert-circle"/>
+                </svg>Заказ с сайта сегодня не доступен. Ведуться технические работы
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="wrap inner">
+            <div class="header__inner">
+                <div class="header__line"><a class="header__logo" href>
+                    <img src="./images_2/logoBlack.png" alt="logo" class="header-bottom__basket">
+                    <img src="./images_2/logoLongBlack.png" class="logo_horis" alt="logo"></a>
+                    <div class="header__block city header__city">
+                        <p class="city__label text--medium">Ваш город: <span class="city__value">Барнаул</span></p>
+                        <p class="city__desc text--small">Доставка за 59 мин.</p>
+                    </div>
+                    <div class="header__block contacts header__contacts"><a class="contacts__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                        <p class="contacts__desc text--small">Сегодня 09:00 - 23:00</p>
+                    </div>
+                    <div class="header__social-icons social-icons">
+                            <a class="social-icons__item" href><i class="fab fa-vk"></i></a>
+                            <a class="social-icons__item"> <i class="fab fa-instagram"></i> </a>
+                        </div>
+                   
+                </div>
+                  <div class="header__block contacts header__contacts">
+                        <a class="contacts__number link text--medium">Urban Delivery</a>
+                    </div>
+                <div class="header__auth auth"><a class="auth__link" href>
+                            <img src="images_2/key.svg" alt="logo">
+                            <span class="auth__text">Войти</span></a></div>
+                <div class="header__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header__form-promocode.form-promocode.form-promocode--error(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                 button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+                   <form action="" class="header__form-promocode">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header__busket">
+                        <img src="images_2/shopping-bag.svg" alt="logo"><span class="basket__count text--medium">2</span>
+                    </button>
+                    <button class="burger header__burger"><span class="burger__item burger__item1"></span><span class="burger__item burger__item2"></span><span class="burger__item burger__item3"></span><span class="burger__item burger__item4"></span><span class="burger__item burger__item5"></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="header-bottom">
+        <div class="wrap inner">
+            <div class="header-bottom__inner">
+                <div class="mini-logo">
+                    <img src="images/mini-logo.png" alt="Мини-логотип">
+                </div>
+                <div class="frame" id="basic" style="display: flex;">
+                    
+                    <nav class="nav clearfix">
+                        <a class="nav__link link text--medium slidee" href>Акции</a>
+                        <a class="nav__link link text--medium slidee" href>Пицца</a>
+                        <a class="nav__link link text--medium slidee" href>Роллы</a>
+                        <a class="nav__link link text--medium slidee" href>Сеты</a>
+                        <a class="nav__link link text--medium slidee" href>Суши-сендвичи</a>
+                        <a class="nav__link link text--medium slidee" href>WOK</a>
+                        <a class="nav__link link text--medium slidee" href>Streetfood</a>
+                        <a class="nav__link link text--medium slidee" href>Супы и салаты</a>
+                        <a class="nav__link link text--medium slidee" href>Напитки</a>
+                        <a class="nav__link link text--medium slidee" href>Еще</a>
+                    </nav>
+                </div>
+                <button class="burger header__burger white" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%) scale(0.6); color: #fff; width: 43px;"><span class="burger__item burger__item1" style="background-color: #fff"></span><span class="burger__item burger__item2" style="background-color: #fff"></span><span class="burger__item burger__item3" style="background-color: #fff"></span><span class="burger__item burger__item4" style="background-color: #fff"></span><span class="burger__item burger__item5" style="background-color: #fff"></span></button>
+
+                <div class="scrollbar">
+                    <div class="handle"></div>
+                </div>
+                <div class="header-bottom__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header-bottom__form-promocode.form-promocode.form-promocode--disabled(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+            <form action="" class="header__form-promocode header-bottom__basket">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header-bottom__basket">
+                    <span class="basket__text text--medium">Корзина</span><span class="basket__count text--medium">2</span>
+                    </button>
+                    <form class="header-bottom__basket-info basket-info" action method>
+                        <div class="basket-info__list"></div>
+                        <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">440 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                        <div class="basket-info__empty-basket">
+                            <div class="basket-info__status"></div>
+                            <div class="basket-info__list">
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                 <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">880 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__bg">
+                <div class="mobile-menu__inner">
+                    <div class="mobile-menu__block"><a class="mobile-menu__auth" href>
+                            Войти</a></div>
+                    <div class="mobile-menu__block"><a class="mobile-menu__link text--medium" href>Акции и новости</a><a class="mobile-menu__link text--medium" href>О нас</a><a class="mobile-menu__link text--medium" href>Вакансии</a><a class="mobile-menu__link text--medium" href>Контакты</a><a class="mobile-menu__link text--medium" href>Ищем поставщиков</a><a class="mobile-menu__link text--medium" href>Предложить помещение</a></div>
+                    <div class="mobile-menu__block">
+                        <div class="city mobile-menu__city">
+                            <p class="city__label text--medium">Ваш город: <span class="city__value city__value--white">Барнаул</span></p>
+                        </div>
+                        <div class="contacts mobile-menu__contacts"><a class="contacts__number mobile-menu__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                            <p class="contacts__desc mobile-menu__desc text--small">Сегодня 09:00 - 23:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="breadcrumbs">
+        <div class="wrap inner">
+            <div class="breadcrumbs__inner"><a class="breadcrumbs__item text--medium" href>Главная</a>
+                <div class="breadcrumbs__item-border">
+                    <img src="images/food.svg" alt="Пицца" style="transform: rotate(90deg);">
+                </div>
+                <div class="breadcrumbs__item text--medium">Контакты</div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="wrap inner">
+            <div class="contact__inner">
+                <h1 class="title--big contact__title">Контакты</h1>
+                <div class="contact__map">
+                    <iframe style="border-radius: 10px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.0042698692073!2d83.70545251580818!3d53.37897307998583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda342e21a2c99%3A0xc316c8cac3625dd4!2zVW5uYW1lZCBSb2FkLCDQkdCw0YDQvdCw0YPQuywg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5!5e0!3m2!1sru!2sru!4v1568564143142!5m2!1sru!2sru"></iframe>
+                </div>
+                <div style="display: flex;" class="contacts-flexwrap">
+                    <div class="contact__item">
+                        <form class="contact__item contact__callback callback callback--success" action method="POST">
+                            <div class="callback__title title--medium">Есть вопросы? Напиши нам</div>
+                            <div class="callback__line">
+                                <div
+                                    class="callback__field-wrap--name callback__field-wrap callback__field-wrap--error">
+                                    <input class="callback__field" type="text" name="name" placeholder="Имя">
+                                </div>
+                                <div class="callback__field-wrap--email callback__field-wrap">
+                                    <input class="callback__field" type="email" name="email" placeholder="Почта">
+                                </div>
+                            </div>
+                            <div class="callback__textarea-wrap callback__textarea-wrap">
+                                <textarea class="callback__textarea" placeholder="Сообщение" name="message"></textarea>
+                            </div>
+                            <div class="callback__line">
+                                <div class="callback__desc text--medium">Нажимая кнопку "Отправить" Вы соглашаетесь с
+                                    политикой обработки <a class="callback__link" href>персональных данных</a></div>
+                                <div class="callback__button button button--fill text--medium">Отправить</div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="contact__block contacts" style="margin-left: 40px;">
+                        <div class="cities">
+                            <p class="city_item">
+                                г. Тамбов, ул. Советская д. 17 (вход с ул. Телмана)
+                            </p>
+                            <p class="city_item">
+                                г. Тамбов, ул. Мичуринская д. 146
+                            </p>
+                        </div>
+                        <a class="contact__number contacts__number link title--small" href="tel:8(929)397-17-76">8
+                            (929) 397-17-76
+                        </a>
+                        <p class="contacts__desc text--small">Ежедневно 10:00 - 23:00</p>
+                        <a class="contact__email" href="mailto:Manager@lafa.ru">UrbanFood.dostavka@gmail.com</a>
+                        <div class="contact__social-icons social-icons">
+                            <a class="social-icons__item" href>
+                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4916 7.38417C16.0886 7.96712 16.7188 8.51559 17.2544 9.15732C17.4909 9.4425 17.7149 9.73678 17.8862 10.0677C18.129 10.5382 17.9091 11.0559 17.4873 11.084L14.865 11.0828C14.1886 11.1389 13.6491 10.8667 13.1954 10.4042C12.8324 10.0344 12.4962 9.64086 12.1471 9.25857C12.0039 9.10232 11.8541 8.9553 11.6752 8.83909C11.3172 8.60673 11.0065 8.67787 10.8019 9.05122C10.5935 9.43097 10.5463 9.85145 10.5258 10.2747C10.4977 10.8921 10.3111 11.0545 9.69083 11.0828C8.36525 11.1453 7.10722 10.9447 5.93854 10.276C4.9082 9.68651 4.10921 8.85429 3.41377 7.91212C2.05975 6.07752 1.02284 4.0616 0.0909061 1.9892C-0.118865 1.52229 0.0345452 1.27165 0.549718 1.26278C1.40519 1.24616 2.26053 1.24734 3.11701 1.2616C3.46469 1.26668 3.69487 1.4661 3.82912 1.79457C4.29195 2.93261 4.85828 4.01535 5.56915 5.01897C5.75846 5.28616 5.95149 5.55336 6.22638 5.74143C6.53048 5.94966 6.76201 5.88064 6.90507 5.54189C6.99586 5.32709 7.0356 5.09573 7.05606 4.86568C7.12384 4.0742 7.13277 3.28408 7.01389 2.49539C6.94091 2.00316 6.66366 1.68451 6.1725 1.59136C5.92186 1.54387 5.95918 1.45061 6.08054 1.30755C6.29131 1.06081 6.48955 0.907227 6.88473 0.907227H9.84832C10.3149 0.999308 10.4185 1.2089 10.4824 1.67836L10.4849 4.97029C10.4798 5.15203 10.5757 5.69134 10.903 5.81163C11.165 5.89726 11.3377 5.68767 11.4949 5.52154C12.2045 4.76845 12.7109 3.87844 13.1633 2.95686C13.3641 2.55163 13.5367 2.13078 13.704 1.7103C13.828 1.39827 14.0225 1.24474 14.374 1.25154L17.2263 1.25409C17.3108 1.25409 17.3964 1.25533 17.4783 1.26934C17.959 1.35125 18.0907 1.55801 17.9422 2.02735C17.7083 2.76371 17.2532 3.37735 16.8083 3.99383C16.3326 4.652 15.8239 5.28764 15.3522 5.94972C14.9188 6.55431 14.9532 6.85907 15.4916 7.38417Z" fill="#F1891F"/>
+                                    </svg>
+                                    <span</a><a class="social-icons__item">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5.34375C6.96445 5.34375 5.30859 6.99961 5.30859 9.03516C5.30859 11.0707 6.96445 12.7266 9 12.7266C11.0355 12.7266 12.6914 11.0707 12.6914 9.03516C12.6914 6.99961 11.0355 5.34375 9 5.34375ZM9 5.34375C6.96445 5.34375 5.30859 6.99961 5.30859 9.03516C5.30859 11.0707 6.96445 12.7266 9 12.7266C11.0355 12.7266 12.6914 11.0707 12.6914 9.03516C12.6914 6.99961 11.0355 5.34375 9 5.34375ZM15.3633 0H2.63672C1.18125 0 0 1.18125 0 2.63672V15.3633C0 16.8188 1.18125 18 2.63672 18H15.3633C16.8188 18 18 16.8188 18 15.3633V2.63672C18 1.18125 16.8188 0 15.3633 0ZM9 13.7812C6.38441 13.7812 4.25391 11.6507 4.25391 9.03516C4.25391 6.4195 6.38441 4.28906 9 4.28906C11.6156 4.28906 13.7461 6.4195 13.7461 9.03516C13.7461 11.6507 11.6156 13.7812 9 13.7812ZM14.8008 4.28906C14.2207 4.28906 13.7461 3.81445 13.7461 3.23438C13.7461 2.6543 14.2207 2.17969 14.8008 2.17969C15.3809 2.17969 15.8555 2.6543 15.8555 3.23438C15.8555 3.81445 15.3809 4.28906 14.8008 4.28906ZM9 5.34375C6.96445 5.34375 5.30859 6.99961 5.30859 9.03516C5.30859 11.0707 6.96445 12.7266 9 12.7266C11.0355 12.7266 12.6914 11.0707 12.6914 9.03516C12.6914 6.99961 11.0355 5.34375 9 5.34375ZM9 5.34375C6.96445 5.34375 5.30859 6.99961 5.30859 9.03516C5.30859 11.0707 6.96445 12.7266 9 12.7266C11.0355 12.7266 12.6914 11.0707 12.6914 9.03516C12.6914 6.99961 11.0355 5.34375 9 5.34375ZM9 5.34375C6.96445 5.34375 5.30859 6.99961 5.30859 9.03516C5.30859 11.0707 6.96445 12.7266 9 12.7266C11.0355 12.7266 12.6914 11.0707 12.6914 9.03516C12.6914 6.99961 11.0355 5.34375 9 5.34375Z" fill="#F1891F"/>
+                                    </svg>
+                                    </a>
+                        </div>
+                        </div>
+                    </div>
+                    
+                <div class="contact__list">
+
+
+                    <div class="contact__item contact__requisites requisites">
+                        <h3 class="title requisites__title">Реквизиты</h3>
+                        <p class="requisites__text text--medium"> <span>ИП Сергеев Станислав Викторович</span><span>ИНН
+                                226815177305,</span><span>ОГРНИП 312222304500038</span><span>Адрес г.Барнаул, ул Э.
+                                Алексеевой 65, 23</span><span>уведомление о регистрации в налоговом органе № 3091530 от
+                                14.02.2012</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrap inner">
+            <div class="footer__inner">
+                <div class="footer__about footer__block">
+                    <div class="footer__logo"><img src="images_2/logo.png" alt="logo"></div>
+                    <div class="footer__desc text--medium">Современный сервис доставки в Тамбове.</div><a class="footer__link text--medium" href>Политика конфиденциальности</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Меню</h3><a class="footer__link text--medium" href>Пицца</a><a class="footer__link text--medium" href>Роллы</a><a class="footer__link text--medium" href>WOK</a><a class="footer__link text--medium" href>Все меню</a><a class="footer__link text--medium" href>Акции</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Информация</h3><a class="footer__link text--medium" href>О нас</a><a class="footer__link text--medium" href>Доставка и оплата</a><a class="footer__link text--medium" href>Вакансии</a><a class="footer__link text--medium" href>Urban Delivery</a><a class="footer__link text--medium" href>Контакты</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Партнерам</h3><a class="footer__link text--medium" href>Приглашаем партнёров</a><a class="footer__link text--medium" href>Предложить помещение</a>
+                </div>
+                <div class="footer__contacts contacts footer__block"><a class="contacts__number footer__number link title--small" href="tel:8(929)397-17-76">8 (920) 482-90-90</a>
+                    <p class="contacts__desc text--small">Ежедневно: 10:00 - 23:00</p><a class="contacts__mail text--medium" href="mailto:UrbanFood.dostavka@gmail.com">UrbanFood.dostavka@gmail.com</a>
+                    <div class="footer__social-icons social-icons"><a class="social-icons__item social-icons__item--white" href>
+                            <i class="fab fa-vk"></i></a><a class="social-icons__item social-icons__item--white">
+                                  <object type="image/svg+xml" data="images_2/instagram.svg" width="20" height="20">
+                                 <img src="images_2/instagram.svg" width="20" height="20" alt="insta" />
+                              </object>
+                        </a></div>
+                </div>
+                <div class="payments-icons">
+                        <img src="images_2/MIR Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Visa Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Mastercard Icon SVG Monochrome.svg" alt="">
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="inner">
+            <div class="popup__inner">
+                <div class="popup__close"></div>
+                <div class="popup__title title--big">Типовой попап</div>
+                <div class="popup__text text--medium">Почему мы называем себя НОМЕР 1? Да, мы не первые, кто показал
+                    городу шаурму, и не единственные, кто готовит пиццу и воки в коробочках. Так почему же? Все просто
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="recommend">
+        <div class="inner">
+            <div class="popup__inner recommend-popup">
+                <div class="popup__close"></div>
+                <div class="popup__body">
+                    <div class="popup__title title--big">
+                        Вам обязательно понравиться вкусная <span class="recommend-popup__name">Пеперони </span>:)</div>
+                    <div class="popup__line">
+                        <div class="popup__img"><img src="images/popup.png" alt="product"></div>
+                        <form class="popup__content" action metrhod="post">
+                            <h3 class="card__title title">Пепперони
+                                <div class="card__feature"></div>
+                            </h3>
+                            <div class="card__line">
+                                <p class="card__price">400</p>
+                            </div>
+                            <p class="card__desc text--medium">Оригинальные колбаски колбаски колбаски колбаски колбаски
+                                колбаски колбаски колбаски колбаски пепперони, сыр моцарелла, пицца-соус,
+                                орегано.пицца-соус, орегано.пицца-соус, орегано. </p>
+                            <div class="card__spec-list">
+                                <div class="card__line">
+                                    <input class="card__radio" type="radio" name="product1-spec"
+                                        id="product1-spec-small" value="25см" checked>
+                                    <label class="card__label" for="product1-spec-small">25см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec"
+                                        id="product1-spec-medium" value="30см">
+                                    <label class="card__label" for="product1-spec-medium">30см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-big"
+                                        value="35см">
+                                    <label class="card__label" for="product1-spec-big">35см</label>
+                                </div>
+                            </div>
+                            <div class="card__panel">
+                                <button class="popup__button button button--common text--medium">
+                                    В корзину</button>
+                                <button class="popup__button button button--fill text--medium">Быстрый заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/jquery-2.1.1.min.js"></script>
+    <script src="static/jquery.sticky.js"></script>
+    <script src="js/sly.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".header-bottom").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+        $(document).ready(function () {
+            $(".mobile-menu__bg").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+    </script>
+</body>
+
+</html>
