@@ -308,6 +308,46 @@
             </div>
         </div>
     </div>
+    <div class="popup" id="auth_popup">
+        <div class="inner">
+            <div class="popup__inner">
+                <div class="popup__close"></div>
+                <div class="popup__title title--medium">Войти на сайт</div>
+
+                <div class="auth-step_1">
+                    <div class="order__field-wrap--tel order__field-wrap">
+                        <p class="text--medium label-text" style="flex-shrink: 0;">Введите номер телефона</p> <input class="order__field" type="text" name="tel" placeholder="+7">
+                    </div>
+                  
+                    <button class="button button--fill" style="align-items: center;" id="getPasswordButton">
+                        <span class="text--medium panel__next" id="getPassword">Получить пароль</span>        
+                    </button>
+                </div>
+                
+
+                <div class="auth-step_2" >
+                    <div class="order__field-wrap--tel order__field-wrap" style="margin-top: 30px;">
+                        <p class="text--medium label-text" style="flex-shrink: 0;">Пароль из смс</p> <input class="order__field" type="password" name="password" placeholder="***">
+                    </div>
+    
+                    <button class="button button--fill" style="align-items: center;">
+                        <span class="text--medium panel__next">Войти</span>
+                            
+                    </button>
+                </div>
+                <div class="top-fixed-line" style="display: none;">
+                    <button class="goback">
+                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="1.01739" height="7.46472" rx="0.508694" transform="matrix(0.695022 0.718988 -0.695022 0.718988 5.83398 0.310547)" fill="#7D7D7D"/>
+                            <rect width="1.01739" height="7.46472" rx="0.508694" transform="matrix(0.695022 -0.718988 -0.695022 -0.718988 5.83301 11.0801)" fill="#7D7D7D"/>
+                        </svg>
+                        Назад
+                    </button>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="popup" id="recommend">
         <div class="inner">
             <div class="popup__inner recommend-popup">
