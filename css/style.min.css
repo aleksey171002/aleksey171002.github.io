@@ -5322,7 +5322,7 @@ header, section, footer {
   }
   .card__button {
     background-color: #f1891f;
-    padding: 5px 11px 6px;
+    padding: 0 0 !important;
     color: white;
     width: 93px;
     height: 30px;
