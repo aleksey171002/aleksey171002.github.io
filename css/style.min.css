@@ -4285,6 +4285,11 @@ form.promocode {
 .order_info--block {
   margin: 10px 0;
 }
+
+section.order {
+  min-height: 60vh;
+}
+
 @media (max-width: 1287px) {
   .banner-about__inner {
     margin: 70px 35px;
