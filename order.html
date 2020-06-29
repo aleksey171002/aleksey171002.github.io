@@ -479,7 +479,12 @@
                             <label class="tabs__label text--medium" for="delivery2">Самовывоз</label>
                         </div>
                         <div class="order__item order__item--active">
-                            <h4 class="title order__subtitle">Адрес доставки</h4>
+                            <!-- <h4 class="title order__subtitle">Адрес доставки</h4> -->
+                            <div class="order__line">
+                                <div class="order__field-wrap--street order__field-wrap order__field-wrap--error">
+                                    <input class="order__field" type="text" name="street" placeholder="Город">
+                                </div>
+                            </div>
                             <div class="order__line">
                                 <div class="order__field-wrap--street order__field-wrap order__field-wrap--error">
                                     <input class="order__field" type="text" name="street" placeholder="Улица">
