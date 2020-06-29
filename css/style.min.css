@@ -4117,6 +4117,10 @@ form.promocode {
   width: 100% !important;
 }
 
+.bottom-fixed-popup {
+  z-index: 99999999999999;
+}
+
 .profile-table .text-bold {
   color: #000;
 }
