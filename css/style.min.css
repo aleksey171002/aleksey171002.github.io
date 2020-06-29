@@ -4291,7 +4291,7 @@ section.order {
 }
 
 
-header, section, footer {
+header, section, footer, div {
   overflow-x: hidden;
 }
 @media (max-width: 1287px) {
