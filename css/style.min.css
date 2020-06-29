@@ -5327,6 +5327,10 @@ header, section, footer {
     width: 93px;
     height: 30px;
   }
+
+  .basket.button {
+    padding: 0 20px !important;
+  }
   .card__button:hover {
     background-color: white;
     border-color: #f1891f;
