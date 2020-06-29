@@ -4290,6 +4290,10 @@ section.order {
   min-height: 60vh;
 }
 
+
+header, section, footer {
+  overflow-x: hidden;
+}
 @media (max-width: 1287px) {
   .banner-about__inner {
     margin: 70px 35px;
