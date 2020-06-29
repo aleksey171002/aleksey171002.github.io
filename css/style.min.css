@@ -4113,6 +4113,10 @@ form.promocode {
   padding: 8px 0;
 }
 
+.nav.clearfix {
+  width: 100% !important;
+}
+
 .profile-table .text-bold {
   color: #000;
 }
@@ -5855,6 +5859,7 @@ section.order {
     align-items: center;
     justify-content: center;
   }
+
 
   .jobs__text {
     font-size: 16px;
