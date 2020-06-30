@@ -3997,7 +3997,7 @@ form.promocode {
   margin-bottom: 15px;
 }
 #basic.frame {
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .popup__buttons .button {
