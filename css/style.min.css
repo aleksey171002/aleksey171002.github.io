@@ -4066,7 +4066,13 @@ form.promocode {
   color: #F1891F
 
 }
+.mobile-menu--active body {
+  overflow: hidden;
+}
 
+.mobile-menu--active {
+  overflow-y: scroll;
+}
 
 .popup-product-buttons {
   display: grid;
