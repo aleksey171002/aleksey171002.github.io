@@ -3958,7 +3958,7 @@ form.promocode {
 }
 
 .button18040 {
-  width: 180px;
+  /* width: 180px; */
   height: 40px;
   display: flex;
   align-items: center;
@@ -4297,6 +4297,35 @@ form.promocode {
 
 section.order {
   min-height: 60vh;
+}
+
+.products .tabsSections {
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+.products__list--rolls {
+  margin-top: 70px;
+}
+#all:checked  ~ #allblock {
+  display: block !important;
+}
+#hard:checked  ~ #hardblock {
+  display: block !important;
+}
+#premium:checked  ~ #premiumblock {
+  display: block !important;
+}
+#zap:checked  ~ #zapblock {
+  display: block !important;
+}
+#ostr:checked  ~ #ostrblock {
+  display: block !important;
+}
+#hot:checked  ~ #hotblock {
+  display: block !important;
+}
+#classic:checked  ~ #classicblock {
+  display: block !important;
 }
 
 @media (max-width: 1287px) {
