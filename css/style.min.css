@@ -895,6 +895,11 @@ button {
   justify-content: center;
   box-sizing: border-box;
   transition: background 0.2s linear;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  display: inline-flex;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .mobile-menu__auth:hover {
@@ -4014,6 +4019,9 @@ form.promocode {
   border: 0.5px solid #e3e3e3;
 }
 
+.popup__inner .card__label {
+  font-size: 14px;
+}
 .order__basket .card__inner::after {
   bottom: 0;
 }
@@ -5121,6 +5129,8 @@ section.order {
   }
  .popup-product-buttons {
    flex-wrap: wrap;
+   display: grid;
+    grid-template-columns: 1fr 1fr;
  }
 
  .popup-product-buttons .popup-product-button {
