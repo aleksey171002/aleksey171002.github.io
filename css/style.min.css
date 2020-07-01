@@ -928,7 +928,7 @@ button {
 }
 
 .mobile-menu__desc {
-  color: #fa9389;
+  color: #fbbb7a;
 }
 
 .basket-info {
@@ -4301,7 +4301,13 @@ section.order {
 
 .products .tabsSections {
   margin-bottom: 50px;
-  margin-top: -30px;
+  margin-top: -20px;
+}
+
+.products .tabsSections label {
+  margin: 5px 10px;
+  margin-left: 0;
+  display: inline-block;
 }
 .products__list--rolls {
   margin-top: 70px;
