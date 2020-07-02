@@ -1,0 +1,267 @@
+@media screen and (max-width: 1230px) {
+    .no-bigtablet {
+        display: none !important;
+    }
+
+    .menu {
+        background: transparent;
+        float: none;
+    }
+
+    .menu_item a {
+        color: #000;
+    }
+
+    .menu_item {
+        padding: 10px 30px;
+    }
+
+    .menu_item.active {
+        background-color: #9F212E;
+    }
+
+    .menu_item.active a {
+        color: #fff;
+    }
+
+    .centred-block {
+        margin-top: 0px;
+        align-items: baseline;
+    }
+
+    .main-text {
+        align-items: baseline;
+    }
+    .centred-block h1 {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .materials {
+        display: none;
+    }
+
+    #about>.us-container>.d-flex {
+        flex-direction: column;
+    }
+
+    .slidee {
+        width: 100%;
+    }
+
+    .about-block {
+        margin-left: 0;
+    }
+
+    .section-title .title::after {
+        display: none;
+    }
+
+    .opacity-title {
+        display: none;
+    }
+
+    .advantages-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #advantages {
+        margin-top: 100px;
+    }
+
+    #products>.us-container>.d-flex {
+        padding-top: 80px !important;
+    }
+
+    #products img {
+        max-width: 150px;
+        margin: 20px 0;
+    }
+
+    .prod-main-title {
+        text-align: left;
+    }
+    .prod-slider-list {
+        text-align: left;
+    }
+    .prod-slider-list li::after {
+        display: none;
+    }
+
+    .prod-slider-list li::before {
+        display: block;
+    }
+
+    .prod-slider-list li {
+        padding-left: 30px;
+    }
+
+    .buttons-slider {
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .prod-main-title {
+        font-size: 36px;
+    }
+
+    .prod-slider-list li.active {
+        font-size: 18px;
+    }
+
+    .prod-slider-list li {
+        font-size: 16px;
+    }
+
+    .osoben-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .osoben-item {
+        min-width: auto;
+        margin: 0;
+    }
+
+    .osoben-item .card-content {
+        padding: 50px 30px;
+    }
+
+    .advantages-item {
+        min-width: auto;
+        padding: 35px 10px;
+    }
+    .news-item {
+        width: 40%;
+    }
+
+    .footer-1 {
+        flex-direction: column;
+    }
+
+    footer .adress {
+        text-align: left !important;
+        margin: 35px 0;
+    }
+    
+    footer .info-list {
+        flex-direction: row;
+        margin-top: 25px;
+    }
+
+    footer .info-item {
+        margin: 5px 10px
+    }
+
+    footer .info-item:first-child {
+        margin-left: 0;
+    }
+    footer .info-item:last-child {
+        margin-right: 0;
+    }
+    .info-item {
+        margin: 5px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .no-tablet {
+        display: none !important;
+    }
+
+    .menu_item {
+        padding: 10px 15px;
+    }
+
+    .mobile-only {
+        display: flex !important;
+    }
+    .news-item {
+        width: 100%;
+    }
+  
+
+}
+@media screen and (max-width: 695px) {
+    .info-list {
+        flex-direction: column;
+        align-items: baseline !important;
+    }
+
+
+    .mobile-button-more {
+        flex-direction: column;
+        align-items: baseline !important;
+    }
+
+    .mobile-button-more .br-button{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline !important;
+        padding: 14px 40px;
+    }
+
+    .mobile-button-more .price {
+        margin-left: 0 !important;
+        margin-top: 25px;
+    }
+
+    .centred-block {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .menu {
+        display: none;
+    }
+
+    .phone-only {
+        display: flex !important;
+    }
+
+    .calltoactionbtn {
+        display: none;
+    }
+
+    .main-text h1 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    footer .info-list {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    
+    footer .info-item {
+        margin-left: 0;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    footer .menu_item {
+        padding-left: 0;
+    }
+
+    footer .menu {
+        align-items: baseline;
+    }
+
+    footer .ad-info {
+        flex-direction: column;
+    }
+
+    .no-phone {
+        display: none;
+    }
+}
