@@ -794,6 +794,11 @@ button {
   z-index: 9999 !important;
 }
 
+.gift__button {
+  padding: 0;
+  align-items: center;
+}
+
 .header-bottom__inner {
   -ms-flex-align: center;
   align-items: center;
