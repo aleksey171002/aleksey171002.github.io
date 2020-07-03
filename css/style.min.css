@@ -908,7 +908,7 @@ button {
 }
 
 .no-scroll {
-  overflow-y: hidden;
+  overflow-y: hidden !important;
 }
 .mobile-menu__link {
   font-family: Roboto Condensed;
