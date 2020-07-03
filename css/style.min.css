@@ -4821,7 +4821,7 @@ section.order {
   }
 
   #tovar .popup__inner {
-    padding:  40px 80px !important;
+    /* padding:  40px 80px !important; */
   }
   form.promocode {
     margin-top: 20px;
