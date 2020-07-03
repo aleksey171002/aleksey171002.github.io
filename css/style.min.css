@@ -2123,7 +2123,7 @@ button {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
-  z-index: 5;
+  z-index: 9999;
   height: 100vh;
   display: -ms-flexbox;
   display: flex;
@@ -6149,6 +6149,10 @@ section.order {
 
   .bottom-fixed-basket-button {
     display: flex;
+  }
+
+  .popup__inner .card__spec-list {
+    grid-template-columns: 1fr;
   }
   .profile2block-no-mobile {
     display: none !important;
