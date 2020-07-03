@@ -1476,7 +1476,7 @@ button {
 
 .products__list--pizza .card__img-wrap:after {
   content: "";
-  display: block;
+  display: none !important;
   width: 162.02px;
   height: 128.36px;
   background-image: url(../images/hoverPizza.png);
