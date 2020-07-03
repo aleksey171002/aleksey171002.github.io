@@ -6021,7 +6021,7 @@ section.order {
 
 
   .is-sticky nav.nav {
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
   .is-sticky .header__burger.white {
     display: block;
