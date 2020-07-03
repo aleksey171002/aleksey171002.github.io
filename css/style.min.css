@@ -791,6 +791,7 @@ button {
   position: relative;
   z-index: 3;
   background-color: #383838;
+  z-index: 9999;
 }
 
 .header-bottom__inner {
