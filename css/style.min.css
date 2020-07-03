@@ -6165,7 +6165,7 @@ section.order {
   }
 
   .popup__inner .card__spec-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   .profile2block-no-mobile {
     display: none !important;
