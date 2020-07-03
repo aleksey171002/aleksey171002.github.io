@@ -797,6 +797,8 @@ button {
 .gift__button {
   padding: 0;
   align-items: center;
+  margin-left: 0 !important;
+  margin-top: 15px;
 }
 
 .header-bottom__inner {
