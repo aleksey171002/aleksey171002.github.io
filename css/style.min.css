@@ -887,7 +887,7 @@ button {
 
 .popup-product-buttons {
   display: grid !important;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr !important;
 }
 
 .mobile-menu__auth {
