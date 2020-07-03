@@ -885,6 +885,11 @@ button {
   border: 0;
 }
 
+.popup-product-buttons {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+}
+
 .mobile-menu__auth {
   font-family: Roboto Condensed;
   font-style: italic;
