@@ -868,7 +868,7 @@ button {
 }
 
 .mobile-menu__block {
-  border-bottom: 1px solid #ff8378;
+  border-bottom: 1px solid #fbbb7a;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -885,7 +885,7 @@ button {
   line-height: 21px;
   color: #fff;
   text-decoration: none;
-  padding: 15px;
+  padding: 5px;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -898,7 +898,7 @@ button {
   border: 1px solid #fff;
   border-radius: 100px;
   display: inline-flex;
-  max-width: 200px;
+  max-width: 130px;
   margin: 0 auto;
 }
 
@@ -907,6 +907,9 @@ button {
   background-color: rgba(0, 0, 0, 0.07);
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
 .mobile-menu__link {
   font-family: Roboto Condensed;
   font-style: italic;
@@ -5232,6 +5235,7 @@ section.order {
     padding-bottom: 14px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding: 13px 55px;
   }
   .header-bottom__form-promocode {
     display: block;
@@ -5379,7 +5383,7 @@ section.order {
   }
 
   .basket.button {
-    padding: 0 20px !important;
+    padding: 0 10px !important;
   }
   .card__button:hover {
     background-color: white;
