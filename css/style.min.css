@@ -5235,6 +5235,9 @@ section.order {
     padding-bottom: 14px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .is-sticky .header-bottom__inner {
     padding: 13px 55px;
   }
   .header-bottom__form-promocode {
