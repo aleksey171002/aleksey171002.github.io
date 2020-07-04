@@ -1242,6 +1242,13 @@ button {
   transition: background 0.3s linear;
 }
 
+#gift .card-dob__img {
+  margin-right: 15px;
+}
+
+#gift .card__inner:after {
+  bottom: -5px;
+}
 .fixed-gift {
   position: fixed;
   bottom: 10px;
