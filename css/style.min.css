@@ -1249,6 +1249,10 @@ button {
 #gift .card__inner:after {
   bottom: -5px;
 }
+
+.bottom-fixed-basket-button .button--fill:hover {
+  background-color: #F1891F;
+}
 .fixed-gift {
   position: fixed;
   bottom: 10px;
