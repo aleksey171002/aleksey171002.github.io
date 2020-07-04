@@ -6433,6 +6433,7 @@ section.order {
   .card__price {
     font-weight: normal !important;
     font-size: 18px !important;
+    margin-left: 15px; 
   }
 
   .popup__inner .card_gramprice {
