@@ -5903,6 +5903,7 @@ section.order {
   }
   .popup-tovar .products__card {
     margin-left: 0;
+    padding-bottom: 50px;
   }
 
   .order__subtitle-visible {
