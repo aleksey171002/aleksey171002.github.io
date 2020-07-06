@@ -6321,8 +6321,7 @@ section.order {
 
   .popup__inner {
     width: 100vw;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    height: var(--app-height);
     border-radius: 0;
   }
 
