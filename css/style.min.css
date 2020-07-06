@@ -6327,6 +6327,7 @@ section.order {
     top: 0;
     position: absolute;
     left: 0;
+    transition: 1s;
   }
 
 
