@@ -6323,6 +6323,9 @@ section.order {
     width: 100vw;
     height: var(--app-height);
     border-radius: 0;
+    top: 0;
+    position: absolute;
+    left: 0;
   }
 
 
