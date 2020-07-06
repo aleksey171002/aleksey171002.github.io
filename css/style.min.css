@@ -6375,6 +6375,8 @@ section.order {
     height: 60px;
     align-items: center;
     justify-content: space-evenly;
+    -webkit-backface-visibility: hidden;
+
   }
 
   .bottom-fixed-popup .button--fill {
