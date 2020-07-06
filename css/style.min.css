@@ -11,6 +11,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 html, body {
   width: 100%;
   overflow-x: hidden;
+
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
@@ -19,6 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 ol, ul {
