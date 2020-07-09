@@ -2006,6 +2006,8 @@ button {
 
 .stocks__subtitle {
   margin-bottom: 24px;
+  color: #000;
+  text-decoration: none;
 }
 
 .stocks__text {
