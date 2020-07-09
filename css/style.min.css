@@ -6305,6 +6305,8 @@ section.order {
     margin: 0 auto;
     position: absolute;
     bottom: 13px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .section__link {
     margin-left: 7px;
