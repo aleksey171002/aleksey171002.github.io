@@ -5049,6 +5049,11 @@ section.order {
     order: 2;
     margin-top: 15px;
   }
+
+  .card__spec-list.popup-product-buttons {
+    overflow-y: scroll;
+  }
+  
   .about__desc {
     margin-top: 13px;
     margin-bottom: 32px;
