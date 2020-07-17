@@ -4340,10 +4340,7 @@ form.promocode {
   padding-left: 200px;
 }
 
-#popup__body 
-{   overflow-y: scroll;
-    max-height: 100%;
-}
+
 
 .about-bonuses {
   font-size: 18px;
@@ -5924,6 +5921,11 @@ section.order {
   .popup-tovar .products__card {
     margin-left: 0;
     padding-bottom: 50px;
+  }
+
+  #popup__body 
+  {   overflow-y: scroll;
+      max-height: 100%;
   }
 
   .order__subtitle-visible {
