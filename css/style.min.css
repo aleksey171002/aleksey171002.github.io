@@ -6165,6 +6165,9 @@ section.order {
     max-width: 40px;
     object-fit: contain;
   }
+  .popup-product-buttons {
+    max-height: auto;
+  }
 .is-sticky .mini-logo {
   position: absolute;
   left: 0;
