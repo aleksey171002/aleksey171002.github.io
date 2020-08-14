@@ -4688,7 +4688,7 @@ section.order {
     margin-bottom: 49px;
   }
   .article__promo {
-    margin-bottom: 69px;
+    margin-top: -69px;
   }
   .article__text {
     margin-bottom: 20px;
