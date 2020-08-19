@@ -5215,10 +5215,20 @@ section.order {
   .dob__button {
     padding: 0 !important;
   }
+  .popup--active .inner {
+    min-width: 100%;
+  }
+
+  .popup--active .products__card, .popup--active .products__card {
+    min-width: 100%;
+    margin-left:  0;
+  }
+
 
 }
 
 @media (max-width: 768px) {
+  
   .tabsSections {
     margin-top: 30px;
   }
@@ -6134,13 +6144,7 @@ section.order {
   .popup-product-button {
     margin: 0 5px;
   }
-  .popup--active .inner {
-    min-width: 100%;
-  }
 
-  .popup--active .products__card {
-    min-width: 100%;
-  }
 
 
 }
