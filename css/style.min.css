@@ -4444,6 +4444,10 @@ section.order {
   z-index: 999;
 }
 
+.mobile-only {
+  display: none !important;
+}
+
 @media (max-width: 1287px) {
   .banner-about__inner {
     margin: 70px 35px;
@@ -6272,6 +6276,11 @@ section.order {
 
 @media (max-width: 520px) {
 
+  .mobile-only {
+    display: inline-block !important;
+  }
+
+  
   .bottom-fixed-basket-button {
     display: flex;
   }
@@ -6548,3 +6557,4 @@ section.order {
 
 
 }
+
