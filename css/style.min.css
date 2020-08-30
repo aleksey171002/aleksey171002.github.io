@@ -6528,6 +6528,9 @@ section.order {
     
   }
  
+  .popup-tovar .card__img-wrap {
+    width: 100%;
+  }
  
 }
 
