@@ -3801,6 +3801,11 @@ form.promocode {
   max-height: 100%;
 }
 
+.products__card .card .card__img-wrap, .products__card .card .card__img {
+  max-width: 100%;
+}
+
+
 .popup-tovar .HOT {
   top: 0;
   left: 40%;
