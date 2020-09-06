@@ -2096,6 +2096,12 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
+  
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
 }
 
 .footer__logo {
@@ -6382,6 +6388,7 @@ section.order {
   }
   .footer__inner {
     padding: 60px 0 33px 10px;
+    display: flex !important;
   }
 
   .dob-title {
