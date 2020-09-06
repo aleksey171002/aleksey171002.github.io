@@ -3597,7 +3597,7 @@ button {
 
 .payments-icons {
   display: flex;
-  /* position: absolute; */
+  position: absolute;
   bottom: 1em;
   right: 1em;
 }
