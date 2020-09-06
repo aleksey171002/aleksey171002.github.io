@@ -2454,7 +2454,7 @@ button {
 
 .article__promo {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   overflow: hidden;
   display: -ms-flexbox;
   display: flex;
@@ -2463,8 +2463,12 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 10px;
+  max-height: 379px;
 }
 
+.article__inner .article__title {
+  margin-bottom: 20px;
+}
 .article__promo img {
   width: 100%;
 }
