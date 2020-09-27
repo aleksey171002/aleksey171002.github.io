@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="static/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link href="static/fonts/jost/jost.css" rel="stylesheet">
+
+    <title>Доставка пиццы</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./static/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff"></head>
+<body class="page">
+
+    <section class="message">
+        <div class="wrap inner">
+            <div class="message__inner text--medium">
+                <svg class="icon icon-alert-circle message__svg">
+                    <use xlink:href="static/sprite.svg#alert-circle"/>
+                </svg>Заказ с сайта сегодня не доступен. Ведутся технические работы
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="wrap inner">
+            <div class="header__inner">
+                <div class="header__line"><a class="header__logo" href="index.html">
+                    <img src="./images_2/logoBlack.png" alt="logo" class="header-bottom__basket">
+                    <img src="./images_2/logoLongBlack.png" class="logo_horis" alt="logo"></a>
+                    <div class="header__block city header__city">
+                        <p class="city__label text--medium">Ваш город: <span class="city__value">Барнаул</span></p>
+                        <p class="city__desc text--small">Доставка за 59 мин.</p>
+                    </div>
+                    <div class="header__block contacts header__contacts"><a class="contacts__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                        <p class="contacts__desc text--small">Сегодня 09:00 - 23:00</p>
+                    </div>
+                    <div class="header__social-icons social-icons">
+                            <a class="social-icons__item" href><i class="fab fa-vk"></i></a>
+                            <a class="social-icons__item"> <i class="fab fa-instagram"></i> </a>
+                        </div>
+                   
+                </div>
+                  <div class="header__block contacts header__contacts">
+                        <a class="contacts__number link text--medium">Urban Delivery</a>
+                    </div>
+                <div class="header__auth auth"><a class="auth__link" href>
+                            <img src="images_2/key.svg" alt="logo">
+                            <span class="auth__text">Войти</span></a></div>
+                <div class="header__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header__form-promocode.form-promocode.form-promocode--error(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                 button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+                   <form action="" class="header__form-promocode">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header__busket">
+                        <img src="images_2/shopping-bag.svg" alt="logo"><span class="basket__count text--medium">2</span>
+                    </button>
+                    <button class="burger header__burger"><span class="burger__item burger__item1"></span><span class="burger__item burger__item2"></span><span class="burger__item burger__item3"></span><span class="burger__item burger__item4"></span><span class="burger__item burger__item5"></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="header-bottom">
+        <div class="wrap inner">
+            <div class="header-bottom__inner">
+                <div class="mini-logo">
+                    <img src="images/mini-logo.png" alt="Мини-логотип">
+                </div>
+                <div class="frame" id="basic" style="display: flex;">
+                    
+                      
+                    <nav class="nav clearfix">
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Акции</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Пицца</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Роллы</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Сеты</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Суши-сендвичи</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">WOK</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Streetfood</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Супы и салаты</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Напитки</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Еще</a>
+                    </nav>
+                </div>
+                <button class="burger header__burger white" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%) scale(0.6); color: #fff; width: 43px;"><span class="burger__item burger__item1" style="background-color: #fff"></span><span class="burger__item burger__item2" style="background-color: #fff"></span><span class="burger__item burger__item3" style="background-color: #fff"></span><span class="burger__item burger__item4" style="background-color: #fff"></span><span class="burger__item burger__item5" style="background-color: #fff"></span></button>
+
+                <div class="scrollbar">
+                    <div class="handle"></div>
+                </div>
+                <div class="header-bottom__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header-bottom__form-promocode.form-promocode.form-promocode--disabled(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+            <form action="" class="header__form-promocode header-bottom__basket">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header-bottom__basket">
+                    <span class="basket__text text--medium">Корзина</span><span class="basket__count text--medium">2</span>
+                    </button>
+                    <form class="header-bottom__basket-info basket-info" action method>
+                        <div class="basket-info__list"></div>
+                        <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">440 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                        <div class="basket-info__empty-basket">
+                            <div class="basket-info__status"></div>
+                            <div class="basket-info__list">
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                 <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">880 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__bg">
+                <div class="mobile-menu__inner">
+                    <div class="mobile-menu__block"><a class="mobile-menu__auth" href>
+                            Войти</a></div>
+                    <div class="mobile-menu__block"><a class="mobile-menu__link text--medium" href>Акции и новости</a><a class="mobile-menu__link text--medium" href>О нас</a><a class="mobile-menu__link text--medium" href>Вакансии</a><a class="mobile-menu__link text--medium" href>Контакты</a><a class="mobile-menu__link text--medium" href>Ищем поставщиков</a><a class="mobile-menu__link text--medium" href>Предложить помещение</a></div>
+                    <div class="mobile-menu__block">
+                        <div class="city mobile-menu__city">
+                            <p class="city__label text--medium">Ваш город: <span class="city__value city__value--white">Барнаул</span></p>
+                        </div>
+                        <div class="contacts mobile-menu__contacts"><a class="contacts__number mobile-menu__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                            <p class="contacts__desc mobile-menu__desc text--small">Сегодня 09:00 - 23:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order">
+        <div class="wrap inner">
+           <div class="order__inner">
+                <div class="order__section order__basket order__section--active">
+                    <div class="order__header">
+                        <h1 class="title--big order__title">Корзина</h1>
+                        <div class="order__steps steps">
+                            <div class="steps__item">
+                                <div class="steps__step text--medium">
+                                    <div class="steps__number">1</div>
+                                </div>
+                                <p class="text--medium steps__text">Корзина</p>
+                            </div>
+                            <div class="steps__item">
+                                <div class="steps__step text--medium">
+                                    <div class="steps__number">2</div>
+                                </div>
+                                <p class="text--medium steps__text">Доставка и оплата</p>
+                            </div>
+                            <div class="steps__item">
+                                <div class="steps__step text--medium">
+                                    <div class="steps__number">3</div>
+                                </div>
+                                <p class="text--medium steps__text">Готово</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__body">
+                        <div class="order__list">
+                            <div class="order__card-small card-small">
+                                <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                <div class="card-small__content">
+                                    <div class="card-small__line">
+                                        <div class="card-small__left">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <div class="card-small__count count">
+                                                    <div class="count__button count__button--big count__button--dec"></div>
+                                                    <input class="count__table" type="text" name="count" readonly value="1">
+                                                    <div class="count__button count__button--big count__button--inc"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line card-small__line--big">
+                                            <p class="card-small__price">440 ₽</p>
+                                            <button class="card-small__delete card-small__delete--big"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__card-small card-small">
+                                <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                <div class="card-small__content">
+                                    <div class="card-small__line">
+                                        <div class="card-small__left">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <div class="card-small__count count">
+                                                    <div class="count__button count__button--big count__button--dec"></div>
+                                                    <input class="count__table" type="text" name="count" readonly value="1">
+                                                    <div class="count__button count__button--big count__button--inc"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line card-small__line--big">
+                                            <p class="card-small__price">440 ₽</p>
+                                            <button class="card-small__delete card-small__delete--big"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__card-small card-small">
+                                <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                <div class="card-small__content">
+                                    <div class="card-small__line">
+                                        <div class="card-small__left">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <div class="card-small__count count">
+                                                    <div class="count__button count__button--big count__button--dec"></div>
+                                                    <input class="count__table" type="text" name="count" readonly value="1">
+                                                    <div class="count__button count__button--big count__button--inc"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line card-small__line--big">
+                                            <p class="card-small__price">440 ₽</p>
+                                            <button class="card-small__return card-small__delete--big">
+                                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                    <path d="M25.797 21.2441L25.7962 21.2423C25.6851 20.9798 23.9647 17.2378 17.7693 16.5014C16.5011 16.3475 14.9925 16.2697 13.1745 16.2561L12.6708 16.2523V16.7561V21.2176C12.6708 21.2299 12.6676 21.2394 12.6631 21.247C12.6591 21.2538 12.6527 21.2609 12.6427 21.267C12.6257 21.2745 12.6047 21.2737 12.5863 21.2616C12.5862 21.2615 12.5861 21.2614 12.586 21.2613L1.12447 13.5462L1.12322 13.5453C1.10907 13.5359 1.09961 13.5187 1.09961 13.5006C1.09961 13.4913 1.10165 13.4839 1.10536 13.477C1.10901 13.4702 1.1161 13.4605 1.1297 13.4505L12.592 5.7371L12.5921 5.73713L12.5973 5.73354C12.6031 5.72948 12.6084 5.72787 12.6146 5.72758C12.6211 5.72728 12.6323 5.72845 12.6468 5.7357C12.6575 5.74182 12.664 5.74902 12.668 5.7557C12.6724 5.76296 12.6746 5.77106 12.6746 5.77975V9.93177V10.3708L13.11 10.4276C14.3346 10.5872 17.5676 11.1404 20.4806 12.7478C23.3805 14.348 25.8996 16.9496 25.8996 21.2224C25.8996 21.2443 25.8865 21.2631 25.869 21.2717L25.8689 21.2717L25.8474 21.2718C25.832 21.2718 25.8201 21.2674 25.8123 21.2623C25.8051 21.2577 25.8003 21.252 25.797 21.2441Z" stroke="#B8B8B8"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0">
+                                                    <rect width="25.8" height="25.8" fill="white" transform="translate(0.599609 0.600098)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                    </svg>
+                                                    
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order__img-error"><img src="images/error-order.png" alt="error"></div>
+                    </div>
+                    <div class="order__inner" style="padding-top: 0">
+           
+                        <div class="order__header">
+                            <h1 class="title order__subtitle no-mobile">Промокод</h1>
+                            
+                        </div>
+                        <form action="" class="promocode" >
+                            <div class="order-button" style="position: relative; display: inline-flex;">
+                                <input type="text" class="input-promocode promocode-white" placeholder="Введите промокод"> 
+                                <button class="input-promocode-button white">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            
+                        </form>
+
+
+                        <div class="buttons" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                            <button class="button button--common  text--medium">Вернуться в меню</button>
+                            <button class="button button--fill" style="align-items: center;">
+                                <span class="text--medium panel__next">Доставка и оплата</span> <svg class="desctop-visible" style="margin-left: 10px;" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.7777 8.42919C18.706 8.24522 18.5984 8.07714 18.4611 7.9346L10.9238 0.440774C10.7832 0.301032 10.6163 0.190182 10.4327 0.114554C10.2491 0.0389258 10.0522 0 9.85345 0C9.452 0 9.067 0.158551 8.78314 0.440774C8.64259 0.580517 8.53109 0.746416 8.45502 0.928998C8.37896 1.11158 8.33981 1.30727 8.33981 1.5049C8.33981 1.90402 8.49928 2.2868 8.78314 2.56902L13.7578 7.49996H2.31607C1.91626 7.49996 1.53283 7.65786 1.25012 7.93894C0.967417 8.22001 0.808594 8.60122 0.808594 8.99872C0.808594 9.39622 0.967417 9.77744 1.25012 10.0585C1.53283 10.3396 1.91626 10.4975 2.31607 10.4975H13.7578L8.78314 15.4284C8.64185 15.5678 8.5297 15.7335 8.45317 15.9162C8.37663 16.0988 8.33723 16.2947 8.33723 16.4925C8.33723 16.6904 8.37663 16.8863 8.45317 17.0689C8.5297 17.2516 8.64185 17.4173 8.78314 17.5567C8.92328 17.6971 9.09001 17.8086 9.27371 17.8847C9.45741 17.9608 9.65444 18 9.85345 18C10.0525 18 10.2495 17.9608 10.4332 17.8847C10.6169 17.8086 10.7836 17.6971 10.9238 17.5567L18.4611 10.0628C18.5984 9.92031 18.706 9.75223 18.7777 9.56825C18.9285 9.20336 18.9285 8.79408 18.7777 8.42919Z" fill="white"/>
+                                    </svg>
+                                    
+                            </button>
+                        </div>
+                    
+                    </div>
+                   
+                    <section style="margin-bottom: 60px; margin-top: 30px;">
+                  
+                        <div class="order__inner" style="padding-top: 0; padding-bottom: 0;">
+                            <div class="order__basket">
+                                <div class="order__header">
+                                    <h1 class="title order__subtitle-visible">Соусы и добавки</h1>      
+                                </div>
+                                <div class="products__list products__list--dob">
+    
+                                        <div class="card__inner">
+                                            <a class="card-dob__img" href><img src="images/sauce.png" alt="product"></a>
+                                            <div class="card__content">
+                                                <h3 class="card__title title dob-title">Васаби
+                                                
+                                                </h3>
+                                        
+                                                <div class="card__line">
+                                                    <p class="card__price dob-price">30 ₽</p>
+                                                    <button class="card__button button button--common text--medium dob__button button11135"> 
+                                                        <span class="card__button-text">В корзину</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                   
+                                        <div class="card__inner">
+                                            <a class="card-dob__img" href><img src="images/sauce.png" alt="product"></a>
+                                            <div class="card__content">
+                                                <h3 class="card__title title dob-title">Васаби
+                                                
+                                                </h3>
+                                        
+                                                <div class="card__line">
+                                                    <p class="card__price dob-price">30 ₽</p>
+                                                    <button class="card__button button button--common text--medium dob__button button11135"> 
+                                                        <span class="card__button-text ">В корзину</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                        <div class="card__inner">
+                                            <a class="card-dob__img" href><img src="images/sauce.png" alt="product"></a>
+                                            <div class="card__content">
+                                                <h3 class="card__title title dob-title">Васаби
+                                                
+                                                </h3>
+                                        
+                                                <div class="card__line">
+                                                    <p class="card__price dob-price">30 ₽</p>
+                                                    <button class="card__button button button--common text--medium dob__button button11135"> 
+                                                        <span class="card__button-text">В корзину</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                  
+                                        <div class="card__inner no-mobile">
+                                            <a class="card-dob__img" href><img src="images/sauce.png" alt="product"></a>
+                                            <div class="card__content">
+                                                <h3 class="card__title title dob-title">Васаби
+                                                
+                                                </h3>
+                                        
+                                                <div class="card__line">
+                                                    <p class="card__price dob-price">30 ₽</p>
+                                                    <button class="card__button button button--common text--medium dob__button button11135"> 
+                                                        <span class="card__button-text">В корзину</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+            
+              
+                    
+                </section>
+                </div>
+                <div class="order__section order__inner step-2">
+                    <div class="order__header">
+                        <h1 class="title--big order__title">Доставка и оплата</h1>
+                        <div class="order__steps steps">
+                            <div class="steps__item">
+                                <div class="steps__step text--medium steps__step--completed">
+                                    <img src="images/success.svg" alt="">
+                                </div>
+                                <p class="text--medium steps__text">Корзина</p>
+                            </div>
+                            <div class="steps__item">
+                                <div class="steps__step text--medium">
+                                    <div class="steps__number">2</div>
+                                </div>
+                                <p class="text--medium steps__text">Доставка и оплата</p>
+                            </div>
+                            <div class="steps__item">
+                                <div class="steps__step text--medium">
+                                    <div class="steps__number">3</div>
+                                </div>
+                                <p class="text--medium steps__text">Готово</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__body">
+                        <div class="order__line" style="margin-top: 40px;">
+                            <div class="order__field-wrap--name order__field-wrap order__field-wrap--error">
+                                <input class="order__field" type="text" name="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="order__field-wrap--tel order__field-wrap order__field-wrap--error">
+                                <input class="order__field" type="text" name="tel" placeholder="+7">
+                            </div>
+                        </div>
+                        <div class="order__tabs tabs">
+                            <input class="tabs__radio" type="radio" name="delivery" id="delivery1" value="Доставка" checked>
+                            <label class="tabs__label text--medium" for="delivery1">Доставка</label>
+                            <input class="tabs__radio" type="radio" name="delivery" id="delivery2" value="Самовывоз">
+                            <label class="tabs__label text--medium" for="delivery2">Самовывоз</label>
+                        </div>
+                        <div class="order__item order__item--active" style="margin-top: 20px;">
+                            <!-- <h4 class="title order__subtitle">Адрес доставки</h4> -->
+                            <div class="order__line">
+                                <div class="order__field-wrap--street order__field-wrap order__field-wrap--error">
+                                    <select class="order__field" type="text" name="street" placeholder="Город">
+                                        <option value="#">Тамбов</option>
+                                        <option value="#">Барнаул</option>
+                                    </select>
+                                </div>
+                                <div class="order__field-wrap--street order__field-wrap order__field-wrap--error">
+                                    <input class="order__field" type="text" name="street" placeholder="Улица">
+                                </div>
+                            </div>
+                            <div class="order__line">
+                                <div class="order__field-wrap--house order__field-wrap order__field-wrap--error">
+                                    <input class="order__field" type="text" name="house" placeholder="Дом">
+                                </div>
+                                <div class="order__field-wrap">
+                                    <input class="order__field" type="text" name="flat" placeholder="Квартира">
+                                </div>
+                                <div class="order__field-wrap">
+                                    <input class="order__field" type="text" name="porch" placeholder="Подъезд">
+                                </div>
+                                <div class="order__field-wrap">
+                                    <input class="order__field" type="text" name="floor" placeholder="Этаж">
+                                </div>
+                            </div>
+                           
+             
+                          
+                            <h4 class="title order__subtitle">Время доставки</h4>
+                            <div class="order__line">
+                                <input class="order__field order__field--medium" type="text" name="time" placeholder="Как можно скорее">
+                            </div>
+                            <h4 class="title order__subtitle">Оплата</h4>
+                            <div class="order__block">
+                                <input class="order__radio" type="radio" name="deliveryPayment" id="deliveryPayment1" value="Онлайн" checked>
+                                <label class="order__label text--medium" for="deliveryPayment1">
+                                    <div class="order__label-circle"></div>Онлайн
+                                </label>
+                                <input class="order__radio" type="radio" name="deliveryPayment" id="deliveryPayment2" value="Наличные">
+                                <label class="order__label text--medium" for="deliveryPayment2">
+                                    <div class="order__label-circle"></div>Наличные
+                                </label>
+                                <input class="order__radio" type="radio" name="deliveryPayment" id="deliveryPayment3" value="Банковская карта курьер">
+                                <label class="order__label text--medium" for="deliveryPayment3">
+                                    <div class="order__label-circle"></div>Банковская карта курьер
+                                </label>
+                            </div>
+                            
+                            <h4 class="title order__subtitle">Комментарий к адресу</h4>
+                            <div class="order__line">
+                                <textarea class="order__textarea" placeholder="Например, не работает домофон" name="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="order__item">
+                            <h4 class="title order__subtitle">Время самовывоза</h4>
+                            <div class="order__line">
+                                <input class="order__field order__field--medium" type="text" name="time" placeholder="Как можно скорее">
+                            </div>
+                            <div class="order__block">
+                                <input class="order__radio" type="radio" name="address" id="address1" value="Лазурная, 36" checked>
+                                <label class="order__label text--medium" for="address1">
+                                    <div class="order__label-circle"></div>Лазурная, 36
+                                </label>
+                                <input class="order__radio" type="radio" name="address" id="address2" value="Ленина, 63">
+                                <label class="order__label text--medium" for="address2">
+                                    <div class="order__label-circle"></div>Ленина, 63
+                                </label>
+                            </div>
+                            <h4 class="title order__subtitle">Оплата</h4>
+                            <div class="order__block">
+                                <input class="order__radio" type="radio" name="pickupPayment" id="pickupPayment1" value="Онлайн" checked>
+                                <label class="order__label text--medium" for="pickupPayment1">
+                                    <div class="order__label-circle"></div>Онлайн
+                                </label>
+                                <input class="order__radio" type="radio" name="pickupPayment" id="pickupPayment2" value="Наличные">
+                                <label class="order__label text--medium" for="pickupPayment2">
+                                    <div class="order__label-circle"></div>Наличные
+                                </label>
+                                <input class="order__radio" type="radio" name="pickupPayment" id="pickupPayment3" value="Банковская карта курьер">
+                                <label class="order__label text--medium" for="pickupPayment3">
+                                    <div class="order__label-circle"></div>Банковская карта курьер
+                                </label>
+                            </div>
+                            <h4 class="title order__subtitle">Промо-код</h4>
+                            <div class="order__line">
+                                <input class="order__field" type="text" name="promoCode" placeholder>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center" class="order-buttons-wrap">
+                        <div class="order__panel panel order__line order__buttons">
+                            <div class="panel__back button button--common text--medium">Предыдущий шаг</div>
+                            <div class="panel__next button button--fill text--medium">Заказать</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__section">
+                    <div class="order__header">
+                        <h1 class="title--big order__title">Корзина</h1>
+                        <div class="order__steps steps">
+                            <div class="steps__item">
+                                <div class="steps__step text--medium steps__step--completed">
+                                    <img src="images/success.svg" alt="">
+                                </div>
+                                <p class="text--medium steps__text">Корзина</p>
+                            </div>
+                            <div class="steps__item">
+                                <div class="steps__step text--medium steps__step--completed">
+                                    <img src="images/success.svg" alt="">
+                                </div>
+                                <p class="text--medium steps__text">Доставка и оплата</p>
+                            </div>
+                            <div class="steps__item">
+                                <div class="steps__step text--medium">
+                                    <div class="steps__number">3</div>
+                                </div>
+                                <p class="text--medium steps__text">Готово</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__body">
+                        <div class="order__img-success"><img src="images/success-order.png" alt="success"></div>
+                    </div>
+                </div>
+    
+        </div>
+
+          
+        </div>
+      
+               
+
+    </section>
+  
+    
+       <footer class="footer">
+        <div class="wrap inner">
+            <div class="footer__inner">
+                <div class="footer__about footer__block">
+                    <div class="footer__logo"><img src="images_2/logo.png" alt="logo"></div>
+                    <div class="footer__desc text--medium">Современный сервис доставки в Тамбове.</div><a class="footer__link text--medium" href>Политика конфиденциальности</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Меню</h3><a class="footer__link text--medium" href="catalog.html">Пицца</a><a class="footer__link text--medium" href="catalog.html">Роллы</a><a class="footer__link text--medium" href="catalog.html">WOK</a><a class="footer__link text--medium" href="catalog.html">Все меню</a><a class="footer__link text--medium" href="promotions.html">Акции</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Информация</h3><a class="footer__link text--medium" href="about.html">О нас</a><a class="footer__link text--medium" href="delivery.html">Доставка и оплата</a><a class="footer__link text--medium" href="jobs.html">Вакансии</a><a class="footer__link text--medium" href>Urban Delivery</a><a class="footer__link text--medium" href="contacts.html">Контакты</a>
+                </div>
+                
+                <div class="footer__contacts contacts footer__block"><a class="contacts__number footer__number link title--small" href="tel:8(929)397-17-76">8 (920) 482-90-90</a>
+                    <p class="contacts__desc text--small">Ежедневно: 10:00 - 23:00</p><a class="contacts__mail text--medium" href="mailto:UrbanFood.dostavka@gmail.com">UrbanFood.dostavka@gmail.com</a>
+                    <div class="footer__social-icons social-icons"><a class="social-icons__item social-icons__item--white" href>
+                            <i class="fab fa-vk"></i></a><a class="social-icons__item social-icons__item--white">
+                                  <object type="image/svg+xml" data="images_2/instagram.svg" width="20" height="20">
+                                 <img src="images_2/instagram.svg" width="20" height="20" alt="insta" />
+                              </object>
+                        </a></div>
+                </div>
+                <div class="payments-icons">
+                        <img src="images_2/MIR Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Visa Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Mastercard Icon SVG Monochrome.svg" alt="">
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="auth_popup">
+        <div class="inner">
+            <div class="popup__inner">
+                <div class="popup__close"></div>
+                <div class="popup__title title--medium">Войти на сайт</div>
+
+                <div class="auth-step_1">
+                    <div class="order__field-wrap--tel order__field-wrap">
+                        <p class="text--medium label-text" style="flex-shrink: 0;">Введите номер телефона</p> <input class="order__field" type="text" name="tel" placeholder="+7">
+                    </div>
+                  
+                    <button class="button button--fill" style="align-items: center;" id="getPasswordButton">
+                        <span class="text--medium panel__next" id="getPassword">Получить пароль</span>        
+                    </button>
+                </div>
+                
+
+                <div class="auth-step_2" >
+                    <div class="order__field-wrap--tel order__field-wrap" style="margin-top: 30px;">
+                        <p class="text--medium label-text" style="flex-shrink: 0;">Пароль из смс</p> <input class="order__field" type="password" name="password" placeholder="***">
+                    </div>
+                    
+                    <a href="account.html">
+                    <button class="button button--fill" style="align-items: center;">
+                        <span class="text--medium panel__next">Войти</span>  
+                    </button>
+                    </a>
+                </div>
+                <div class="top-fixed-line" style="display: none;">
+                    <button class="goback">
+                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="1.01739" height="7.46472" rx="0.508694" transform="matrix(0.695022 0.718988 -0.695022 0.718988 5.83398 0.310547)" fill="#7D7D7D"/>
+                            <rect width="1.01739" height="7.46472" rx="0.508694" transform="matrix(0.695022 -0.718988 -0.695022 -0.718988 5.83301 11.0801)" fill="#7D7D7D"/>
+                        </svg>
+                        Назад
+                    </button>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="inner">
+            <div class="popup__inner">
+                <div class="popup__close"></div>
+                <div class="popup__title title--big">Типовой попап</div>
+                <div class="popup__text text--medium">Почему мы называем себя НОМЕР 1? Да, мы не первые, кто показал городу шаурму, и не единственные, кто готовит пиццу и воки в коробочках. Так почему же? Все просто</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="recommend">
+        <div class="inner">
+            <div class="popup__inner recommend-popup">
+                <div class="popup__close"></div>
+                <div class="popup__body">
+                    <div class="popup__title title--big">
+                        Вам обязательно понравиться вкусная <span class="recommend-popup__name">Пеперони </span>:)</div>
+                    <div class="popup__line">
+                        <div class="popup__img"><img src="images/popup.png" alt="product"></div>
+                        <form class="popup__content" action metrhod="post">
+                            <h3 class="card__title title">Пепперони
+                                <div class="card__feature"></div>
+                            </h3>
+                            <div class="card__line">
+                                <p class="card__price">400</p>
+                            </div>
+                            <p class="card__desc text--medium">Оригинальные колбаски колбаски колбаски колбаски колбаски колбаски колбаски колбаски колбаски пепперони, сыр моцарелла, пицца-соус, орегано.пицца-соус, орегано.пицца-соус, орегано. </p>
+                            <div class="card__spec-list">
+                                <div class="card__line">
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-small" value="25см" checked>
+                                    <label class="card__label" for="product1-spec-small">25см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-medium" value="30см">
+                                    <label class="card__label" for="product1-spec-medium">30см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-big" value="35см">
+                                    <label class="card__label" for="product1-spec-big">35см</label>
+                                </div>
+                            </div>
+                            <div class="card__panel">
+                                <button class="popup__button button button--common text--medium">
+                                    В корзину</button>
+                                <button class="popup__button button button--fill text--medium">Быстрый заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/jquery-2.1.1.min.js"></script>
+    <script src="static/jquery.sticky.js"></script>
+     <script src="js/sly.min.js"></script>
+    <script src="js/detect.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            $(".header-bottom").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                 minWidthElement: 0
+            });
+        });
+        $(document).ready(function() {
+            $(".mobile-menu__bg").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+    </script>
+</body>
+</html>

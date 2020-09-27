@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="static/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link href="static/fonts/jost/jost.css" rel="stylesheet">
+
+    <title>Доставка пиццы</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./static/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff"></head>
+<body class="page">
+
+    <section class="message">
+        <div class="wrap inner">
+            <div class="message__inner text--medium">
+                <svg class="icon icon-alert-circle message__svg">
+                    <use xlink:href="static/sprite.svg#alert-circle"/>
+                </svg>Заказ с сайта сегодня не доступен. Ведутся технические работы
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="wrap inner">
+            <div class="header__inner">
+                <div class="header__line"><a class="header__logo" href="index.html">
+                    <img src="./images_2/logoBlack.png" alt="logo" class="header-bottom__basket">
+                    <img src="./images_2/logoLongBlack.png" class="logo_horis" alt="logo"></a>
+                    <div class="header__block city header__city">
+                        <p class="city__label text--medium">Ваш город: <span class="city__value">Барнаул</span></p>
+                        <p class="city__desc text--small">Доставка за 59 мин.</p>
+                    </div>
+                    <div class="header__block contacts header__contacts"><a class="contacts__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                        <p class="contacts__desc text--small">Сегодня 09:00 - 23:00</p>
+                    </div>
+                    <div class="header__social-icons social-icons">
+                            <a class="social-icons__item" href><i class="fab fa-vk"></i></a>
+                            <a class="social-icons__item"> <i class="fab fa-instagram"></i> </a>
+                        </div>
+                   
+                </div>
+                  <div class="header__block contacts header__contacts">
+                        <a class="contacts__number link text--medium">Urban Delivery</a>
+                    </div>
+                <div class="header__auth auth"><a class="auth__link" href>
+                            <img src="images_2/key.svg" alt="logo">
+                            <span class="auth__text">Войти</span></a></div>
+                <div class="header__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header__form-promocode.form-promocode.form-promocode--error(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                 button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+                   <form action="" class="header__form-promocode">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header__busket">
+                        <img src="images_2/shopping-bag.svg" alt="logo"><span class="basket__count text--medium">2</span>
+                    </button>
+                    <button class="burger header__burger"><span class="burger__item burger__item1"></span><span class="burger__item burger__item2"></span><span class="burger__item burger__item3"></span><span class="burger__item burger__item4"></span><span class="burger__item burger__item5"></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="header-bottom">
+        <div class="wrap inner">
+            <div class="header-bottom__inner">
+                <div class="mini-logo">
+                    <img src="images/mini-logo.png" alt="Мини-логотип">
+                </div>
+                <div class="frame" id="basic" style="display: flex;">
+                    
+                      
+                    <nav class="nav clearfix">
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Акции</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Пицца</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Роллы</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Сеты</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Суши-сендвичи</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">WOK</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Streetfood</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Супы и салаты</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Напитки</a>
+                        <a class="nav__link link text--medium slidee" href="catalog.html">Еще</a>
+                    </nav>
+                </div>
+                <button class="burger header__burger white" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%) scale(0.6); color: #fff; width: 43px;"><span class="burger__item burger__item1" style="background-color: #fff"></span><span class="burger__item burger__item2" style="background-color: #fff"></span><span class="burger__item burger__item3" style="background-color: #fff"></span><span class="burger__item burger__item4" style="background-color: #fff"></span><span class="burger__item burger__item5" style="background-color: #fff"></span></button>
+
+                <div class="scrollbar">
+                    <div class="handle"></div>
+                </div>
+                <div class="header-bottom__right">
+                    <!-- Состояния:-->
+                    <!-- form-promocode--error - ошибка-->
+                    <!-- form-promocode--disabled - отключен-->
+                    <!-- form.header-bottom__form-promocode.form-promocode.form-promocode--disabled(action="" method="post")
+            .form-promocode__label
+                input.form-promocode__field(type="text" name="code" placeholder="Промокод")
+                button.form-promocode__button
+                    +icon('arrow-right', 'form-promocode__svg')
+            -->
+            <form action="" class="header__form-promocode header-bottom__basket">
+                            <input type="text" class="input-promocode" placeholder="Промокод">
+                            <button class="input-promocode-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+            </form>
+                    <button class="basket button button--fill header-bottom__basket">
+                    <span class="basket__text text--medium">Корзина</span><span class="basket__count text--medium">2</span>
+                    </button>
+                    <form class="header-bottom__basket-info basket-info" action method>
+                        <div class="basket-info__list"></div>
+                        <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">440 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                        <div class="basket-info__empty-basket">
+                            <div class="basket-info__status"></div>
+                            <div class="basket-info__list">
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-info__card-small card-small">
+                                    <div class="card-small__img"><img src="images/image.png" alt="basket-list"></div>
+                                    <div class="card-small__content">
+                                        <div class="card-small__line">
+                                            <div class="card-small__block">
+                                                <p class="card-small__title">Чесночная курица</p>
+                                                <p class="card-small__option">Соус классический 350 г</p>
+                                            </div>
+                                            <div class="card-small__line">
+                                                <p class="card-small__price">440 ₽</p>
+                                                <button class="card-small__delete"></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-small__line">
+                                            <div class="card-small__count count">
+                                                <div class="count__button count__button--dec"></div>
+                                                <input class="count__table" type="text" name="count" readonly value="1">
+                                                <div class="count__button count__button--inc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                 <div class="basket-info__panel">
+                            <p class="basket-info__price text--medium">Сумма заказа: <span class="basket-info__price-value">880 ₽</span></p>
+                            <button class="button button--fill text--medium">Заказать</button>
+                        </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__bg">
+                <div class="mobile-menu__inner">
+                    <div class="mobile-menu__block"><a class="mobile-menu__auth" href>
+                            Войти</a></div>
+                    <div class="mobile-menu__block"><a class="mobile-menu__link text--medium" href>Акции и новости</a><a class="mobile-menu__link text--medium" href>О нас</a><a class="mobile-menu__link text--medium" href>Вакансии</a><a class="mobile-menu__link text--medium" href>Контакты</a><a class="mobile-menu__link text--medium" href>Ищем поставщиков</a><a class="mobile-menu__link text--medium" href>Предложить помещение</a></div>
+                    <div class="mobile-menu__block">
+                        <div class="city mobile-menu__city">
+                            <p class="city__label text--medium">Ваш город: <span class="city__value city__value--white">Барнаул</span></p>
+                        </div>
+                        <div class="contacts mobile-menu__contacts"><a class="contacts__number mobile-menu__number link text--medium" href="tel:8(929)397-17-76">8 (929) 397-17-76</a>
+                            <p class="contacts__desc mobile-menu__desc text--small">Сегодня 09:00 - 23:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="breadcrumbs">
+        <div class="wrap inner">
+            <div class="breadcrumbs__inner"><a class="breadcrumbs__item text--medium" href>Главная</a>
+                <div class="breadcrumbs__item-border">
+                    <img src="images/food.svg" alt="Пицца" style="transform: rotate(90deg);">
+                </div>
+                <a class="breadcrumbs__item text--medium" href>Акции и новости</a>
+                <div class="breadcrumbs__item-border">
+                    <img src="images/food.svg" alt="Пицца" style="transform: rotate(90deg);">
+                </div>
+                <div class="breadcrumbs__item text--medium">Пицца на день рождения</div>
+            </div>
+
+        </div>
+    </section>
+    <section class="article">
+        <div class="wrap inner">
+            <div class="article__inner">
+                <h1 class="title--big article__title">Пицца на день рождения</h1>
+                <div class="article__promo">
+                    <picture>
+                        <source srcset="images/stock3.png" media="(max-width: 768px)">
+                        <source srcset="images/stock2.png" media="(max-width: 1287px)"><img src="images/stock1.png" alt="article">
+                    </picture>
+                </div>
+                <div class="article__content">
+                    <p class="article__text text--medium">Почему мы называем себя НОМЕР 1? Да, мы не первые, кто показал городу шаурму, и не единственные, кто готовит пиццу и воки в коробочках. Так почему же? Все просто</p>
+                    <p class="article__text text--medium">Вы любите кушать. Вкусно кушать. Даже слишком вкусно. А мы умеем готовить до невозможности аппетитную и суперсытную еду, что просто пальчики оближешь! Наша компания рождена для того, чтобы одна только мысль о нашем меню заставляла слюнки течь, а желудки - радоваться. Чтобы работать со всей душой и ловить от этого кайф. Чтобы делать вас и вашу семью улыбчивыми и счастливыми. Чтобы быть для вас лучшими, а значит НОМЕРОМ 1.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products" style="margin-top: 85px;">
+        <div class="wrap inner">
+            <div class="products__inner"  >
+                <div class="products__list products__list--pizza">
+                    
+                    <form class="products__card card card--new" action method="get">
+                        <div class="card__inner">
+                            <div class="card__img-wrap"><a class="card__img" href><img src="images/image.png" alt="product"></a></div>
+                            <div class="card__content">
+                                <h3 class="card__title title">Пепперони
+                                    <div class="card__feature"></div>
+                                </h3>
+                                <p class="card__desc text--medium">Оригинальные колбаски пепперони, сыр моцарелла, пицца-соус, орегано.</p>
+                               
+                                <div class="card__line">
+                                    <p class="card__price">440 ₽</p>
+                                    <button class="card__button button button--common text--medium"> <span class="card__button-text">В корзину</span>
+                                        <svg class="icon icon-shopping-bag card__button-svg">
+                                            <use xlink:href="static/sprite.svg#shopping-bag"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__spec-list">
+                                    <div class="card__line">
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product2-spec-small" value="25см">
+                                        <label class="card__label" for="product2-spec-small">25см</label>
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product2-spec-medium" value="30см" checked>
+                                        <label class="card__label" for="product2-spec-medium">30см</label>
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product2-spec-big" value="35см">
+                                        <label class="card__label" for="product2-spec-big">35см</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="products__card card card--new" action method="get">
+                        <div class="card__inner">
+                            <div class="card__img-wrap"><a class="card__img" href><img src="images/image.png" alt="product"></a></div>
+                            <div class="card__content">
+                                <h3 class="card__title title">Название
+                                    <div class="card__feature"></div>
+                                </h3>
+                                <p class="card__desc text--medium">Оригинальные колбаски пепперони, сыр моцарелла, пицца-соус, орегано.</p>
+
+                                <div class="card__line">
+                                    <p class="card__price">400 ₽</p>
+                                    <button class="card__button button button--common text--medium"> <span class="card__button-text">В корзину</span>
+                                        <svg class="icon icon-shopping-bag card__button-svg">
+                                            <use xlink:href="static/sprite.svg#shopping-bag"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__spec-list">
+                                    <div class="card__line">
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product3-spec-small" value="25см">
+                                        <label class="card__label" for="product3-spec-small">25см</label>
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product3-spec-medium" value="30см">
+                                        <label class="card__label" for="product3-spec-medium">30см</label>
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product3-spec-big" value="35см" checked>
+                                        <label class="card__label" for="product3-spec-big">35см</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="products__card card card--new" action method="get">
+                        <div class="card__inner">
+                            <div class="card__img-wrap"><a class="card__img" href><img src="images/image.png" alt="product"></a></div>
+                            <div class="card__content">
+                                <h3 class="card__title title">Название
+                                    <div class="card__feature"></div>
+                                </h3>
+                                <p class="card__desc text--medium">Оригинальные колбаски пепперони, сыр моцарелла, пицца-соус, орегано.</p>
+
+                                <div class="card__line">
+                                    <p class="card__price">420 ₽</p>
+                                    <button class="card__button button button--common text--medium"> <span class="card__button-text">В корзину</span>
+                                        <svg class="icon icon-shopping-bag card__button-svg">
+                                            <use xlink:href="static/sprite.svg#shopping-bag"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__spec-list">
+                                    <div class="card__line">
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product4-spec-small" value="25см">
+                                        <label class="card__label" for="product4-spec-small">25см</label>
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product4-spec-medium" value="30см">
+                                        <label class="card__label" for="product4-spec-medium">30см</label>
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product4-spec-big" value="35см" checked>
+                                        <label class="card__label" for="product4-spec-big">35см</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="products__card card card--new" action method="get">
+                        <div class="card__inner">
+                            <div class="card__img-wrap"><a class="card__img" href><img src="images/image.png" alt="product"></a></div>
+                            <div class="card__content">
+                                <h3 class="card__title title">Название
+                                    <div class="card__feature"></div>
+                                </h3>
+                                <p class="card__desc text--medium">Оригинальные колбаски пепперони, сыр моцарелла, пицца-соус, орегано.</p>
+
+                                <div class="card__line">
+                                    <p class="card__price">420 ₽</p>
+                                    <button class="card__button button button--common text--medium"> <span class="card__button-text">В корзину</span>
+                                        <svg class="icon icon-shopping-bag card__button-svg">
+                                            <use xlink:href="static/sprite.svg#shopping-bag"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__spec-list">
+                                    <div class="card__line">
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product5-spec-small" value="25см" checked>
+                                        <label class="card__label" for="product5-spec-small">25см</label>
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product5-spec-medium" value="30см">
+                                        <label class="card__label" for="product5-spec-medium">30см</label>
+                                        <input class="card__radio" type="radio" name="product1-spec" id="product5-spec-big" value="35см">
+                                        <label class="card__label" for="product5-spec-big">35см</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stocks section">
+        <div class="wrap inner">
+            <div class="stocks__inner">
+                <div class="section__header">
+                    <h2 class="title--big stocks__title">Другие акции и новости</h2>
+                </div>
+                <div class="stocks__list">
+                    <div class="stocks__item-wrap">
+                        <div class="stocks__item"><a class="stocks__img" href><img src="images/actions/Group 1.png" alt="stocks"></a>
+                            <div class="stocks__content">
+                                <h3 class="stocks__subtitle title">Пицца на день рождения</h3>
+                                <p class="stocks__text text--medium">День Рождения? Отлично! Праздник на полную катушку! Любая пицца 30 см в подарок на день рождения при заказе от 1000 рублей. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stocks__item-wrap">
+                        <div class="stocks__item"><a class="stocks__img" href><img src="images/actions/Group 2.png" alt="stocks"></a>
+                            <div class="stocks__content">
+                                <h3 class="stocks__subtitle title">Кусок пиццы + лимонад🔥</h3>
+                                <p class="stocks__text text--medium">Кусочек пиццы и лимонад ВСЕГО за 120₽ </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stocks__item-wrap">
+                        <div class="stocks__item"><a class="stocks__img" href><img src="images/actions/Group 5.png" alt="stocks"></a>
+                            <div class="stocks__content">
+                                <h3 class="stocks__subtitle title">Пицца дня по выгодной цене</h3>
+                                <p class="stocks__text text--medium">Забирай пиццу по выгодной цене: 25 см - 199 рублей 30 см - 299 рублей 35 см - 429 рублей Понедельник: Фаворит Вторник: Касьятора Среда: Гавайская Четверг:... </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button button--common stocks__button text--medium">Все акции и новости</button>
+            </div>
+        </div>
+    </section>
+       <footer class="footer">
+        <div class="wrap inner">
+            <div class="footer__inner">
+                <div class="footer__about footer__block">
+                    <div class="footer__logo"><img src="images_2/logo.png" alt="logo"></div>
+                    <div class="footer__desc text--medium">Современный сервис доставки в Тамбове.</div><a class="footer__link text--medium" href>Политика конфиденциальности</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Меню</h3><a class="footer__link text--medium" href="catalog.html">Пицца</a><a class="footer__link text--medium" href="catalog.html">Роллы</a><a class="footer__link text--medium" href="catalog.html">WOK</a><a class="footer__link text--medium" href="catalog.html">Все меню</a><a class="footer__link text--medium" href="promotions.html">Акции</a>
+                </div>
+                <div class="footer__links footer__block">
+                    <h3 class="footer__subtitle title--small">Информация</h3><a class="footer__link text--medium" href="about.html">О нас</a><a class="footer__link text--medium" href="delivery.html">Доставка и оплата</a><a class="footer__link text--medium" href="jobs.html">Вакансии</a><a class="footer__link text--medium" href>Urban Delivery</a><a class="footer__link text--medium" href="contacts.html">Контакты</a>
+                </div>
+                
+                <div class="footer__contacts contacts footer__block"><a class="contacts__number footer__number link title--small" href="tel:8(929)397-17-76">8 (920) 482-90-90</a>
+                    <p class="contacts__desc text--small">Ежедневно: 10:00 - 23:00</p><a class="contacts__mail text--medium" href="mailto:UrbanFood.dostavka@gmail.com">UrbanFood.dostavka@gmail.com</a>
+                    <div class="footer__social-icons social-icons"><a class="social-icons__item social-icons__item--white" href>
+                            <i class="fab fa-vk"></i></a><a class="social-icons__item social-icons__item--white">
+                                  <object type="image/svg+xml" data="images_2/instagram.svg" width="20" height="20">
+                                 <img src="images_2/instagram.svg" width="20" height="20" alt="insta" />
+                              </object>
+                        </a></div>
+                </div>
+                <div class="payments-icons">
+                        <img src="images_2/MIR Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Visa Icon SVG Monochrome.svg" alt="">
+                        <img src="images_2/Mastercard Icon SVG Monochrome.svg" alt="">
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="inner">
+            <div class="popup__inner">
+                <div class="popup__close"></div>
+                <div class="popup__title title--big">Типовой попап</div>
+                <div class="popup__text text--medium">Почему мы называем себя НОМЕР 1? Да, мы не первые, кто показал городу шаурму, и не единственные, кто готовит пиццу и воки в коробочках. Так почему же? Все просто</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="auth_popup">
+        <div class="inner">
+            <div class="popup__inner">
+                <div class="popup__close"></div>
+                <div class="popup__title title--medium">Войти на сайт</div>
+
+                <div class="auth-step_1">
+                    <div class="order__field-wrap--tel order__field-wrap">
+                        <p class="text--medium label-text" style="flex-shrink: 0;">Введите номер телефона</p> <input class="order__field" type="text" name="tel" placeholder="+7">
+                    </div>
+                  
+                    <button class="button button--fill" style="align-items: center;" id="getPasswordButton">
+                        <span class="text--medium panel__next" id="getPassword">Получить пароль</span>        
+                    </button>
+                </div>
+                
+
+                <div class="auth-step_2" >
+                    <div class="order__field-wrap--tel order__field-wrap" style="margin-top: 30px;">
+                        <p class="text--medium label-text" style="flex-shrink: 0;">Пароль из смс</p> <input class="order__field" type="password" name="password" placeholder="***">
+                    </div>
+                    
+                    <a href="account.html">
+                    <button class="button button--fill" style="align-items: center;">
+                        <span class="text--medium panel__next">Войти</span>  
+                    </button>
+                    </a>
+                </div>
+                <div class="top-fixed-line" style="display: none;">
+                    <button class="goback">
+                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="1.01739" height="7.46472" rx="0.508694" transform="matrix(0.695022 0.718988 -0.695022 0.718988 5.83398 0.310547)" fill="#7D7D7D"/>
+                            <rect width="1.01739" height="7.46472" rx="0.508694" transform="matrix(0.695022 -0.718988 -0.695022 -0.718988 5.83301 11.0801)" fill="#7D7D7D"/>
+                        </svg>
+                        Назад
+                    </button>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="recommend">
+        <div class="inner">
+            <div class="popup__inner recommend-popup">
+                <div class="popup__close"></div>
+                <div class="popup__body">
+                    <div class="popup__title title--big">
+                        Вам обязательно понравиться вкусная <span class="recommend-popup__name">Пеперони </span>:)</div>
+                    <div class="popup__line">
+                        <div class="popup__img"><img src="images/popup.png" alt="product"></div>
+                        <form class="popup__content" action metrhod="post">
+                            <h3 class="card__title title">Пепперони
+                                <div class="card__feature"></div>
+                            </h3>
+                            <div class="card__line">
+                                <p class="card__price">400</p>
+                            </div>
+                            <p class="card__desc text--medium">Оригинальные колбаски колбаски колбаски колбаски колбаски колбаски колбаски колбаски колбаски пепперони, сыр моцарелла, пицца-соус, орегано.пицца-соус, орегано.пицца-соус, орегано. </p>
+                            <div class="card__spec-list">
+                                <div class="card__line">
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-small" value="25см" checked>
+                                    <label class="card__label" for="product1-spec-small">25см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-medium" value="30см">
+                                    <label class="card__label" for="product1-spec-medium">30см</label>
+                                    <input class="card__radio" type="radio" name="product1-spec" id="product1-spec-big" value="35см">
+                                    <label class="card__label" for="product1-spec-big">35см</label>
+                                </div>
+                            </div>
+                            <div class="card__panel">
+                                <button class="popup__button button button--common text--medium">
+                                    В корзину</button>
+                                <button class="popup__button button button--fill text--medium">Быстрый заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/jquery-2.1.1.min.js"></script>
+    <script src="static/jquery.sticky.js"></script>
+    <script src="js/sly.min.js"></script>
+    <script src="js/detect.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".header-bottom").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+        $(document).ready(function() {
+            $(".mobile-menu__bg").sticky({
+                topSpacing: 0,
+                zIndex: 5,
+                responsiveWidth: true,
+                minWidthElement: 0
+            });
+        });
+    </script>
+</body>
+</html>
