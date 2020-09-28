@@ -4096,7 +4096,7 @@ form.promocode {
 }
 
  .card__button-text {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .button18040 {
