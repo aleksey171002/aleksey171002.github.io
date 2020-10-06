@@ -4099,6 +4099,10 @@ form.promocode {
   font-size: 14px !important;
 }
 
+#order .card-small__title {
+  font-size: 18px;
+}
+
 .button18040 {
   /* width: 180px; */
   height: 40px;
