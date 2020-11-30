@@ -200,3 +200,29 @@
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+@media screen and (max-width: 1300px) {
+    .reviews__item-wrap {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 60px;
+        grid-gap: 10px;
+    }
+    .reviews__item {
+        margin-bottom: 3px;
+    }
+
+    .reviews__inner .columns {
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    .reviews__inner .col-1 {
+        flex-direction: column;
+    }
+
+    .reviews__inner .name_and_date {
+        margin-left: 0 !important;
+    }
+    
+}
