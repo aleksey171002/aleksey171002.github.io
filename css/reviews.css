@@ -1,0 +1,202 @@
+
+.reviews__button {
+    display: inline-flex;
+    background-color: #F1891F;
+    color: #fff;
+}
+
+.reviews__list {
+    margin: 30px 0;
+}
+.reviews__item-wrap {
+    display: flex;
+    align-items: center;
+    grid-gap: 50px;
+}
+.reviews__item {
+    display: inline-flex;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    padding: 35px;
+    max-width: 700px;
+}
+
+.response__item {
+    display: inline-flex;
+    background: #FFE3C7;
+    border: 1px solid #FFCD91;
+    box-sizing: border-box;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    padding: 35px 80px;
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    align-items: center;
+}
+
+
+.reviews__item-wrap {
+    margin: 15px 0;
+}
+
+.response__item::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: '';
+    background-image: url(../images/q1.svg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.response__item::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: '';
+    background-image: url(../images/q2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+}
+.reviews__item--stars {
+    display: flex;
+    align-self: center;
+}
+
+.reviews__item--star-active svg path {
+    stroke: none;
+    fill: #F1891F;
+}
+
+.reviews-col-del {
+    width: 1px;
+    height: 100%;
+    background: #181717;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.reviews__item .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.reviews__item--name {
+    font-family: Roboto Condensed;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.reviews__item--date {
+    font-family: Roboto Condensed;
+    font-style: italic;
+}
+
+.response__author {
+    font-family: Roboto Condensed;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #854A04;
+}
+
+.response__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.reviews__field {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 7px 20px 6px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    outline: none;
+    width: 100%;
+  }
+  
+  .reviews__field--medium {
+    max-width: 300px;
+  }
+  
+  .reviews__field:placeholder {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #797979;
+  }
+  
+  .reviews__field:focus {
+    border-color: #717171;
+  }
+
+  #reviews__popup .popup__inner {
+      padding: 45px;
+      text-align: left;
+  }
+
+  .order__field-wrap .reviews__item--star:hover svg path {
+    stroke: none;
+    background-color: #F1891F;
+  }
+
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
